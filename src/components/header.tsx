@@ -23,14 +23,17 @@ export function Header() {
           <Link href="/services" className="hover:text-[#e2725b] transition">
             Services
           </Link>
+          <Link href="/emdr" className="hover:text-[#e2725b] transition">
+            EMDR
+          </Link>
           <Link href="/faqs" className="hover:text-[#e2725b] transition">
             FAQs
           </Link>
-          <Link href="/contact" className="hover:text-[#e2725b] transition">
-            Contact
-          </Link>
           <Link href="/rates" className="hover:text-[#e2725b] transition">
             Rates
+          </Link>
+          <Link href="/contact" className="hover:text-[#e2725b] transition">
+            Contact
           </Link>
         </nav>
       </div>

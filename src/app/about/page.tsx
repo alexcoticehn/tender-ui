@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Home() {
+export default function About() {
   return (
     <div className="min-h-screen bg-[#f7f5f0] text-gray-900 font-sans">
         <section className="relative h-[80vh] w-full">
