@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+/* Custom font smoothing and base tone */
+body {
+  @apply antialiased;
+  background-color: #f9f5f0;
+  color: #3e3e3e;
+}
