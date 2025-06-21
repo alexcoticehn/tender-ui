@@ -8,7 +8,7 @@ export function Header() {
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/">
           <Image
-            src="/images/favicon.ico"
+            src="/images/logo.png"
             alt="Tender Counselling Logo"
             width={160}
             height={40}
