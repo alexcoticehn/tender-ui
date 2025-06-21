@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -29,6 +28,9 @@ export function Header() {
           </Link>
           <Link href="/contact" className="hover:text-[#e2725b] transition">
             Contact
+          </Link>
+          <Link href="/rates" className="hover:text-[#e2725b] transition">
+            Rates
           </Link>
         </nav>
       </div>

@@ -1,12 +1,6 @@
-import Head from "next/head";
-
 export default function Services() {
   return (
     <div className="min-h-screen bg-[#f7f5f0] text-gray-900 font-sans">
-      <Head>
-        <title>Services - Tender Counselling</title>
-        <meta name="description" content="Explore counselling services offered by Megan Yerxa, including EMDR therapy, individual, relationship, and family support." />
-      </Head>
       <main className="max-w-5xl mx-auto px-6 space-y-12 py-12">
         <h1 className="text-4xl font-bold text-center">Services</h1>
 

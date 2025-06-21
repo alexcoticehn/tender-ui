@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { BookingLink } from "@/components/bookingLink";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={cn(inter.className, "bg-[#f9f5f0] text-[#3e3e3e]")}>
         <Header />
         <main className="pt-20 px-4 max-w-4xl mx-auto min-h-[80vh]">{children}</main>
+        <BookingLink />
         <Footer />
       </body>
     </html>
