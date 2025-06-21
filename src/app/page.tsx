@@ -29,7 +29,7 @@ export default function HomePage() {
         <div>
           <h2 className="text-2xl font-semibold text-[#5c4a3c] mb-2">Compassionate, Client-Centered Therapy</h2>
           <p className="text-[#6b5e54]">
-            We believe healing happens in a space where you're deeply seen, heard, and supported.
+            We believe healing happens in a space where you&apos;re deeply seen, heard, and supported.
           </p>
         </div>
         <div>

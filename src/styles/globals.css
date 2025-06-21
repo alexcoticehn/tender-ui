@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "tailwindcss/preflight";
-@tailwind utilities;
+@import "tailwindcss/utilities";
 
 /* Custom font smoothing and base tone */
 body {
