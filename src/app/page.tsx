@@ -1,16 +1,9 @@
-import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#f7f5f0] text-gray-900 font-sans">
-      <Head>
-        <title>Megan Yerxa - Tender Counselling</title>
-        <meta name="description" content="Steady support across shifting waters. Megan Yerxa offers trauma-informed counselling, EMDR therapy, and relationship support in Vancouver and across BC." />
-        <meta name="keywords" content="EMDR, Eye Movement Desensitization and Reprocessing, Therapy, Counselling, Vancouver, Online Counselling, Trauma Counselling, EMDR Counselling Vancouver" />
-        <link rel="icon" href="/images/favicon.ico" />
-      </Head>
       <main className="space-y-20">
         <section className="relative h-[80vh] w-full">
           <Image src="/images/hero-trees.png" alt="Forest path" fill className="object-cover" />
