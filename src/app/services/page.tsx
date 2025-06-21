@@ -1,7 +1,6 @@
 export default function Services() {
   return (
     <div className="min-h-screen bg-[#f7f5f0] text-gray-900 font-sans">
-      <main className="max-w-5xl mx-auto px-6 space-y-12 py-12">
         <h1 className="text-4xl font-bold text-center">Services</h1>
 
         <section className="space-y-8">
@@ -25,7 +24,6 @@ export default function Services() {
             <p>Navigate dynamics and deepen connection within family systems. My approach is inclusive, trauma-informed, and designed to create space for all voices to be heard. Together, we can work on communication, repair, and mutual understanding.</p>
           </div>
         </section>
-      </main>
     </div>
   );
 }

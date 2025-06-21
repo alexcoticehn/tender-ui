@@ -4,7 +4,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#f7f5f0] text-gray-900 font-sans">
-      <main className="space-y-20">
         <section className="relative h-[80vh] w-full">
           <Image src="/images/hero-trees.png" alt="Forest path" fill className="object-cover" />
           <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-4">
@@ -50,7 +49,6 @@ export default function Home() {
             </Link>
           </div>
         </section>
-      </main>
     </div>
   );
 }

@@ -1,7 +1,6 @@
 export default function Rates() {
   return (
     <div className="min-h-screen bg-[#fffaf4] text-[#4b3f32] font-sans">
-      <main className="max-w-3xl mx-auto px-6 py-12">
         <h1 className="text-3xl font-semibold mb-6 text-center">Session Rates</h1>
         <p className="mb-6 text-lg">
           As a pre-licensed clinical counsellor, I&apos;m currently offering reduced-rate sessions while I complete my registration.
@@ -31,7 +30,6 @@ export default function Rates() {
           <li>Receipts will be provided for insurance or tax purposes.</li>
           <li>24 hours notice is required for cancellations to avoid being charged the full session fee.</li>
         </ul>
-      </main>
     </div>
   );
 }
