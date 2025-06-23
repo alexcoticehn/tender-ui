@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export function Header() {
+export default function Header() {
   return (
-        <header className="flex flex-row">
+        <header className="flex flex-row pointer-events-auto">
         <Link href="/">
           <Image
             src="/images/logo.png"

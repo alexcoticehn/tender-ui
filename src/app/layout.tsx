@@ -1,10 +1,6 @@
 import "@/styles/globals.css";
-import { Inter } from "next/font/google";
-import { cn } from "@/lib/utils";
 import { Footer } from "@/components/footer";
 import { BookingLink } from "@/components/bookingLink";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Tender Counselling",
@@ -18,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="icon" href="/images/favicon.ico" />
       </head>
-      <body className={cn(inter.className)}>
+      <body>
         <main className="mx-auto space-y-10">
           {children}
         </main>
