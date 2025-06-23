@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function Header() {
   return (
-        <header className="flex flex-row items-center">
+        <header className="flex flex-row">
         <Link href="/">
           <Image
             src="/images/logo.png"

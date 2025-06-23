@@ -5,17 +5,15 @@ import { Header } from "@/components/header";
 export default function Home() {
   return (
     <div className="min-h-screen text-gray-900 font-sans">
-        <section className="relative h-[80vh] w-full">
-          <div className="mx-auto px-4 py-4 flex items-center flex-row md:ml-auto bg-[url(/images/hero-trees.png)] bg-cover bg-size-100 min-h-300">
+          <div className="mx-auto px-4 py-4 flex flex-row md:ml-auto bg-[url(/images/hero-trees.png)] bg-cover bg-size-100 min-h-300">
           <Header />
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
+          <div className="absolute inset-0 flex flex-col justify-center text-white text-center px-4">
             <h1 className="text-4xl font-bold mb-2">Megan Yerxa - Tender Counselling</h1>
             <p className="text-xl">Steady support across shifting waters</p>
           </div>
           </div>
-        </section>
 
-        <section className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <section className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
           <Image src="/images/megan-headshot.webp" alt="Megan headshot" width={500} height={500} className="rounded-2xl object-cover w-full" />
           <div>
             <h2 className="text-3xl font-semibold mb-4">Meet Megan</h2>
