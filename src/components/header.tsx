@@ -3,8 +3,7 @@ import Image from "next/image";
 
 export function Header() {
   return (
-    <header className="bg-transparent top-0 z-50">
-      <div className="mx-auto px-4 py-4 flex items-center flex-row md:ml-auto">
+        <header className="flex flex-row items-center">
         <Link href="/">
           <Image
             src="/images/logo.png"
@@ -36,7 +35,6 @@ export function Header() {
             Contact
           </Link>
         </nav>
-      </div>
-    </header>
+        </header>
   );
 }

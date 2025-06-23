@@ -1,14 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Header } from "@/components/header";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#f7f5f0] text-gray-900 font-sans">
+    <div className="min-h-screen text-gray-900 font-sans">
         <section className="relative h-[80vh] w-full">
-          <Image src="/images/hero-trees.png" alt="Forest path" fill className="object-cover" />
-          <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-4">
+          <div className="mx-auto px-4 py-4 flex items-center flex-row md:ml-auto bg-[url(/images/hero-trees.png)] bg-cover bg-size-100 min-h-300">
+          <Header />
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
             <h1 className="text-4xl font-bold mb-2">Megan Yerxa - Tender Counselling</h1>
             <p className="text-xl">Steady support across shifting waters</p>
+          </div>
           </div>
         </section>
 

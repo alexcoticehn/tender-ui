@@ -2,7 +2,6 @@ import "@/styles/globals.css";
 import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { Footer } from "@/components/footer";
-import { Header } from "@/components/header";
 import { BookingLink } from "@/components/bookingLink";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,9 +18,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="icon" href="/images/favicon.ico" />
       </head>
-      <body className={cn(inter.className, "bg-[#f9f5f0] text-[#3e3e3e]")}>
-        <Header />
-        <main className="max-w-4xl mx-auto px-6 py-12 space-y-10">{children}</main>
+      <body className={cn(inter.className)}>
+        <main className="mx-auto px-6 py-12 space-y-10">
+          {children}
+        </main>
         <BookingLink />
         <Footer />
       </body>
