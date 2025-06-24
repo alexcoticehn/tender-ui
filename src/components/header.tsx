@@ -5,7 +5,7 @@ export default function Header() {
 return (
         <header>
         <nav>
-            <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 relative flex py-8">
+            <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 relative flex py-8 pointer-events-auto">
                         <div className="relative z-10">
                         <Link href="/">
           <Image

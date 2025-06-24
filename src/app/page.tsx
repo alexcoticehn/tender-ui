@@ -5,9 +5,11 @@ import Header from "@/components/header";
 export default function Home() {
   return (
     <div className="min-h-screen text-gray-900 font-sans">
-          <div className="mx-auto px-4 py-4 flex flex-row md:ml-auto bg-[url(/images/hero-trees-cropped.png)] bg-cover bg-size-100 min-h-300 pointer-events-none">
+          <div className="mx-auto px-4 py-4 flex flex-col md:ml-auto bg-[url(/images/hero-trees-cropped_1.png)] bg-cover bg-size-75 min-h-150 pointer-events-none">
+          <div className="relative flex flex-row">
           <Header />
-          <div className="absolute inset-0 flex flex-col justify-center text-white px-4 pointer-events-none font-serif bottom-4">
+          </div>
+          <div className="relative inset-0 flex flex-col justify-end text-white px-4 sm:px-6 lg:px-8 pointer-events-none font-serif bottom-4 text-left mt-auto">
             <h1 className="text-4xl font-bold mb-2">Megan Yerxa - Tender Counselling</h1>
             <p className="text-xl">Steady support across shifting waters</p>
           </div>
