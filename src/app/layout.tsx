@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href="/images/favicon.ico" />
       </head>
       <body>
-        <main className="mx-auto space-y-10">
+        <main className="space-y-10 container">
           {children}
         </main>
         <BookingLink />

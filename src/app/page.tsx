@@ -7,7 +7,7 @@ export default function Home() {
     <div className="min-h-screen text-gray-900 font-sans">
           <div className="mx-auto px-4 py-4 flex flex-row md:ml-auto bg-[url(/images/hero-trees-cropped.png)] bg-cover bg-size-100 min-h-300 pointer-events-none">
           <Header />
-          <div className="absolute inset-0 flex flex-col justify-center text-white text-center px-4 pointer-events-none">
+          <div className="absolute inset-0 flex flex-col justify-center text-white px-4 pointer-events-none font-serif bottom-4">
             <h1 className="text-4xl font-bold mb-2">Megan Yerxa - Tender Counselling</h1>
             <p className="text-xl">Steady support across shifting waters</p>
           </div>
