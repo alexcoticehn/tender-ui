@@ -15,14 +15,17 @@ export default function Home() {
           </div>
           </div>
 
-        <section className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Image src="/images/megan-headshot.webp" alt="Megan headshot" width={500} height={500} className="rounded-2xl object-cover w-full" />
-          <div>
-            <h2 className="text-3xl font-semibold mb-4">Meet Megan</h2>
+        <section className="max-w-5xl mx-auto mt-12">
+          <h2 className="text-6xl mb-4 font-serif">Meet Megan</h2>
+          <div className="grid md:grid-cols-6">
+            <div className="md:col-span-2 flex items-center justify-center">
+          <Image src="/images/megan-headshot.webp" alt="Megan headshot" width={500} height={500} className="object-cover w-full" />
+          </div>
+          <div className="flex flex-col justify-center font-serif md:col-start-4 md:col-span-3">
             <p className="mb-4">Hi, I&apos;m Megan. I&apos;m a counsellor with over 17 years of experience supporting people through grief, trauma, identity shifts, and major life transitions. I&apos;ve worked as a coroner, a victim support worker, and now as a therapist offering grounded, collaborative care.</p>
             <p className="mb-4">My approach is warm, inclusive, and shaped by real-world experience. I work with individuals, families, and people in relationships of all kinds. Together, we&apos;ll move at your pace and focus on what matters most to you.</p>
             <p className="mb-4">I identify as queer and genderqueer, and I&apos;m committed to creating a space where all identities are welcome.</p>
-            <Link href="/about" className="inline-block bg-[#e2725b] text-white px-4 py-2 rounded-xl hover:bg-[#c95d4d] transition">Learn more</Link>
+          </div>
           </div>
         </section>
 
