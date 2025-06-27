@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/header";
 
@@ -29,32 +28,23 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="max-w-5xl mx-auto px-6 space-y-8">
-          <h2 className="text-3xl font-semibold">Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white p-6 rounded-2xl shadow">
-              <h3 className="text-xl font-bold">Individual Counselling</h3>
-              <p>Personalized support for trauma, anxiety, grief, and life transitions.</p>
+        <section className="mx-auto mt-12 bg-[#495a58] text-white">
+          <div className="max-w-7xl mx-auto px-4 py-12">
+            <h2 className="text-6xl mb-4 font-serif">Services</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="flex items-center justify-center">
+                Content
+              </div>
+              <div className="flex items-center justify-center">
+                Content
+              </div>
+              <div className="flex items-center justify-center">
+                Content
+              </div>
             </div>
-            <div className="bg-white p-6 rounded-2xl shadow">
-              <h3 className="text-xl font-bold">Relationship Therapy</h3>
-              <p>Support for couples, polycules, and all relationship structures.</p>
-            </div>
-            <div className="bg-white p-6 rounded-2xl shadow">
-              <h3 className="text-xl font-bold">EMDR Therapy</h3>
-              <p>Sometimes talk therapy isn&apos;t enough, especially when trauma lives in the body. EMDR (Eye Movement Desensitization and Reprocessing) helps you process painful experiences using gentle techniques like eye movements or tapping. It&apos;s especially helpful if you&apos;ve felt stuck, even with insight or coping tools. We&apos;ll move at your pace, with steady support every step of the way. <Link href="/emdr-therapy" className="text-[#e2725b] underline">Learn more about EMDR therapy →</Link></p>
-            </div>
-            <div className="bg-white p-6 rounded-2xl shadow">
-              <h3 className="text-xl font-bold">Family Therapy</h3>
-              <p>Navigate dynamics and deepen connection within family systems.</p>
-            </div>
-          </div>
-          <div className="text-center mt-6">
-            <Link href="/services" className="inline-block bg-[#e2725b] text-white px-6 py-3 rounded-xl hover:bg-[#c95d4d] transition">
-              View All Services
-            </Link>
           </div>
         </section>
+
     </div>
   );
 }

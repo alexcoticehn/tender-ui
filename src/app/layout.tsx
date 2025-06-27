@@ -1,6 +1,5 @@
 import "@/styles/globals.css";
 import { Footer } from "@/components/footer";
-import { BookingLink } from "@/components/bookingLink";
 
 export const metadata = {
   title: "Tender Counselling",
@@ -18,7 +17,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="space-y-10 container">
           {children}
         </main>
-        <BookingLink />
         <Footer />
       </body>
     </html>
