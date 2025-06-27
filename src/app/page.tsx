@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Header from "@/components/header";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -32,14 +33,17 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 py-12">
             <h2 className="text-6xl mb-4 font-serif">Services</h2>
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="flex items-center justify-center">
-                Content
+              <div className="flex flex-col items-center justify-center">
+                <Link href="/" className="text-2xl font-semibold hover:underline">Individual Counselling</Link>
+                <Image src="/images/logo.png" alt="Individual Counselling" width={200} height={200} />
               </div>
-              <div className="flex items-center justify-center">
-                Content
+              <div className="flex flex-col items-center justify-center">
+                <Link href="/" className="text-2xl font-semibold hover:underline">EMDR Therapy</Link>
+                <Image src="/images/logo.png" alt="EMDR Therapy" width={200} height={200} />
               </div>
-              <div className="flex items-center justify-center">
-                Content
+              <div className="flex flex-col items-center justify-center">
+                <Link href="/" className="text-2xl font-semibold hover:underline">Group Counselling</Link>
+                <Image src="/images/logo.png" alt="Group Counselling" width={200} height={200} />
               </div>
             </div>
           </div>
