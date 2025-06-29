@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-      <div className="min-h-screen text-gray-900 font-sans">
+      <div className="min-h-screen text-gray-900 font-serif">
           <div className="mx-auto px-4 py-4 flex flex-col md:ml-auto bg-[url(/images/hero-trees-cropped_1.png)] bg-cover bg-size-75 min-h-150 pointer-events-none">
           <div className="relative flex flex-row">
           <Header />
@@ -39,6 +39,26 @@ export default function About() {
                 As a queer person, I care deeply about creating a space where all identities, relationship structures, and lived experiences are seen and respected. 
                 My practice is actively inclusive, anti-oppressive, and grounded in ongoing reflection and accountability.</p>
             </div>
+          </section>
+          <section className="mx-auto bg-[#495a58] flex flex-col gap-4">
+            <h2 className="text-4xl mx-auto justify-center text-[#d4967d] flex flex-row pt-15">
+              My Credentials
+            </h2>
+            <p className="flex flex-row justify-start text-[#d4967d] ml-20 pt-20 text-lg">Education</p>
+            <p className="flex flex-row justify-start text-white ml-20">Master of Counselling, City University of Canada -with Honours</p>
+            <p className="flex flex-row justify-start text-white ml-20">Bachelor of Arts, Simon Fraser University (International Studies with a focus on International Development and Sustainability)</p>
+            <p className="flex flex-row justify-start text-white ml-20">Certificate in Sustainable Community Development</p>
+            <p className="flex flex-row justify-start text-[#d4967d] ml-20 pt-20 text-lg">Clinical Training Highlights</p>
+            <p className="flex flex-row justify-start text-white ml-20">EMDR Basic Training (EMDRIA)</p>
+            <p className="flex flex-row justify-start text-white ml-20">Accelerated Experiential Dynamic Psychotherapy (AEDP) Immersion and Essentials</p>
+            <p className="flex flex-row justify-start text-white ml-20">Internal Family Systems (IFS) informed approaches for complex trauma</p>
+            <p className="flex flex-row justify-start text-white ml-20">Flash Technique for trauma processing</p>
+            <p className="flex flex-row justify-start text-white ml-20">Integrative Trauma and Attachment Treatment (ITATM)</p>
+            <p className="flex flex-row justify-start text-white ml-20">Narrative Therapy (trauma and violence informed, Levels I-III)</p>
+            <p className="flex flex-row justify-start text-white ml-20">Polyvagal Theory and nervous system regulation (Deb Dana)</p>
+            <p className="flex flex-row justify-start text-white ml-20">Dialectical Behavioural Therapy (DBT) Skills</p>
+            <p className="flex flex-row justify-start text-white ml-20">Response-Based Practice and narrative informed approaches (Allan Wade)</p>
+            <p className="flex flex-row justify-start text-white ml-20 pb-15">Additional training in Emotion Freedom Tapping, inner child work, cultural safety, and non-violent communication</p>
           </section>
 
       </div>
