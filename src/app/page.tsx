@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen text-gray-900 font-sans">
+    <div className="min-h-screen text-gray-900 font-serif">
           <div className="mx-auto px-4 py-4 flex flex-col md:ml-auto bg-[url(/images/hero-trees-cropped_1.png)] bg-cover bg-size-75 min-h-150 pointer-events-none">
           <div className="relative flex flex-row">
           <Header />
