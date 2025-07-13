@@ -9,7 +9,7 @@ export default function Services() {
           <h1 className="text-3xl mt-4 text-[#d4967d] mx-auto flex flex-row">Services</h1>
           <div className="grid md:grid-cols-3 gap-6 mt-4 content-start">
             <div className="flex flex-col bg-white mx-auto pt-5">
-            <Image src="/images/logo.png" alt="Tender Counselling Logo" width={200} height={200} className="mx-auto" />
+            <Image src="/images/individual_counselling.jpg" alt="" width={435} height={435} className="mx-auto" />
             <h2 className="text-2xl text-center text-[#d4967d]">Individual Counselling</h2>
             <p className="text-center mt-4 text-black">
             Individual counselling is a space just for you. Whether you&apos;re working through trauma, anxiety, 
@@ -19,7 +19,7 @@ export default function Services() {
             </p>
             </div>
             <div className="flex flex-col bg-white mx-auto pt-5">
-            <Image src="/images/logo.png" alt="Tender Counselling Logo" width={200} height={200} className="mx-auto" />
+            <Image src="/images/house_landscape.jpg" alt="" height={400} width={400} className="mx-auto" />
             <h2 className="text-2xl text-center text-[#d4967d]">EMDR Therapy</h2>
             <p className="text-center mt-4 text-black">
             EMDR, or Eye Movement Desensitization and Reprocessing, is an evidence-based approach that helps people heal from trauma, 
@@ -36,7 +36,7 @@ export default function Services() {
             </p>
             </div>
             <div className="flex flex-col bg-white mx-auto pt-5">
-            <Image src="/images/logo.png" alt="Tender Counselling Logo" width={200} height={200} className="mx-auto" />
+            <Image src="/images/relationship_counselling.jpg" alt="" width={400} height={400} className="mx-auto" />
             <h2 className="text-2xl text-center text-[#d4967d]">Relationship Counselling</h2>
             <p className="text-center mt-4 text-black">
             I offer counselling for people in all kinds of relationships — couples, polycules, co-parents, chosen family, and more. Relationship work can be helpful if you&apos;re facing communication challenges, 
