@@ -29,19 +29,43 @@ export default function EMDRTherapy() {
           </div>
         </div>
 
-        <section>
+        <section className="mx-8">
           <h2 className="text-2xl font-semibold mb-4">What to Expect</h2>
           <p className="mb-4">EMDR is more than just eye movements. It is a carefully structured process designed to support safety, readiness, and trust. We&apos;ll move through eight flexible phases, always guided by your comfort and goals.</p>
-          <ul className="list-disc list-inside space-y-2">
-            <li><strong>Phase 1: History and Mapping -</strong> Explore your history, themes, and patterns to create a roadmap for our work.</li>
-            <li><strong>Phase 2: Preparation and Safety -</strong> Build grounding skills, practice bilateral stimulation, and strengthen internal resources.</li>
-            <li><strong>Phase 3: Assessment -</strong> Identify a target memory and its associated thoughts, emotions, and body sensations.</li>
-            <li><strong>Phase 4: Desensitization -</strong> Begin processing using bilateral stimulation in a structured and contained way.</li>
-            <li><strong>Phase 5: Installation -</strong> Strengthen adaptive beliefs, such as moving from &quot;I&apos;m not safe&quot; to &quot;I can protect myself.&quot;</li>
-            <li><strong>Phase 6: Body Scan -</strong> Release lingering tension and integrate healing physically and emotionally.</li>
-            <li><strong>Phase 7: Closure -</strong> End with grounding, reflection, and stabilization.</li>
-            <li><strong>Phase 8: Re-Evaluation -</strong> Revisit the target memory in future sessions to assess changes and readiness.</li>
-          </ul>
+          <div className="grid md:grid-cols-3 gap-8 mb-4">
+            <div className="flex flex-col">
+              <p className="text-xl">Phase 1: History and Mapping</p>
+              <p>We explore your history and begin identifying themes, memories, and patterns that are connected to your current struggles. This creates a roadmap for our work together.</p>
+            </div>
+            <div className="flex flex-col">
+              <p className="text-xl">Phase 2: Preparation and Safety</p>
+              <p>We build grounding skills, practice bilateral stimulation, and ensure you feel supported before any memory work begins. This stage helps strengthen your internal resources.</p>
+            </div>
+            <div className="flex flex-col">
+              <p className="text-xl">Phase 3: Assessment</p>
+              <p>We select a target memory and identify the thoughts, emotions, and body sensations connected to it. This helps activate the memory in a manageable and structured way.</p>
+            </div>
+            <div className="flex flex-col">
+              <p className="text-xl">Phase 4: Desensitization</p>
+              <p>Using bilateral stimulation, we begin processing the memory. You don&apos;t need to relive or retell every detail. We will simply notice what arises, and I will guide you in staying grounded throughout.</p>
+            </div>
+            <div className="flex flex-col">
+              <p className="text-xl">Phase 5: Installation</p>
+              <p>We focus on strengthening a more adaptive belief, such as shifting from &quot;I&apos;m not safe&quot; to &quot;I can protect myself.&quot; This belief is integrated using further bilateral stimulation.</p>
+            </div>
+            <div className="flex flex-col">
+              <p className="text-xl">Phase 6: Body Scan</p>
+              <p>We check in with your body to release any lingering tension or discomfort. EMDR helps integrate healing on both emotional and physical levels.</p>
+            </div>
+            <div className="flex flex-col">
+              <p className="text-xl">Phase 7: Closure</p>
+              <p>We wrap up the session with grounding and reflection, making sure you feel regulated and supported before the session ends.</p>
+            </div>
+            <div className="flex flex-col">
+              <p className="text-xl">Phase 8: Re-evaluation</p>
+              <p>In our next session, we check in on what has changed. If the memory still holds emotional charge, we return to it or move on to the next target depending on your readiness.</p>
+            </div>
+          </div>
         </section>
 
         <section>
