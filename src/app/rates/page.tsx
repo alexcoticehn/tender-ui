@@ -1,35 +1,34 @@
+import Header from "@/components/header";
+
 export default function Rates() {
   return (
-    <div className="min-h-screen bg-[#fffaf4] text-[#4b3f32] font-sans">
-        <h1 className="text-3xl font-semibold mb-6 text-center">Session Rates</h1>
-        <p className="mb-6 text-lg">
-          As a pre-licensed clinical counsellor, I&apos;m currently offering reduced-rate sessions while I complete my registration.
-        </p>
-
-        <div className="space-y-4 text-base">
-          <p><strong>50-minute individual session:</strong> $120 (pre-licensed rate)</p>
-          <p><strong>80-minute extended session:</strong> $192 (pre-licensed rate)</p>
-          <p className="italic">Once I receive my full RCC registration, rates will be:</p>
-          <p><strong>50-minute session:</strong> $165</p>
-          <p><strong>80-minute extended session:</strong> $264</p>
-        </div>
-
-        <h2 className="text-2xl font-semibold mt-10 mb-4">Sliding Scale</h2>
-        <p className="mb-6">
-          I offer a limited number of sliding scale spots based on financial need. If cost is a barrier to accessing therapy, please feel free to reach out. We can explore options together to find something that works.
-        </p>
-
-        <h2 className="text-2xl font-semibold mt-10 mb-4">Insurance Coverage</h2>
-        <p className="mb-6">
-          While I&apos;m pre-licensed, some extended health plans may offer coverage for therapy with supervised therapists or interns. Please check with your provider. Once I&apos;m fully registered, most plans in BC will reimburse for counselling with an RCC (Registered Clinical Counsellor).
-        </p>
-
-        <h2 className="text-2xl font-semibold mt-10 mb-4">Payment and Policies</h2>
-        <ul className="list-disc list-inside space-y-2">
-          <li>Payment is due at the end of each session by e-transfer or credit card.</li>
-          <li>Receipts will be provided for insurance or tax purposes.</li>
-          <li>24 hours notice is required for cancellations to avoid being charged the full session fee.</li>
-        </ul>
+    <div className="min-h-screen text-black font-serif">
+      <div className="mx-auto px-4 py-4 flex flex-col md:ml-auto bg-cover bg-center pointer-events-none">
+          <div className="relative flex flex-row">
+          <Header />
+          </div>
+      </div>
+        <section className="mx-8">
+          <h2 className="text-4xl mb-4">Rates</h2>
+          <div className="grid md:grid-cols-3 gap-8 mb-6">
+            <div className="flex flex-col">
+              <p className="mb-4">$165</p>
+              <p>50m Individual Therapy Session</p>
+            </div>
+            <div className="flex flex-col">
+              <p className="mb-4">$185</p>
+              <p>50m Relationship (couples, polycules, any relationship structure) Session</p>
+            </div>
+            <div className="flex flex-col">
+              <p className="mb-4">$230</p>
+              <p>90m Individual Therapy Session</p>
+            </div>
+            <div className="flex flex-col">
+              <p className="mb-4">$250</p>
+              <p>90m Relationship (couples, polycules, any relationship structure) Session</p>
+            </div>
+          </div>
+        </section>
     </div>
   );
 }
