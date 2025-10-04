@@ -29,11 +29,11 @@ return (
           <Link href="/emdr" className="hover:text-[#e2725b] text-black duration-300">
             EMDR
           </Link>
-          <Link href="/faqs" className="hover:text-[#e2725b] text-black duration-300">
-            FAQs
-          </Link>
           <Link href="/rates" className="hover:text-[#e2725b] text-black duration-300">
             Rates
+          </Link>
+          <Link href="/faqs" className="hover:text-[#e2725b] text-black duration-300">
+            FAQs
           </Link>
           <Link href="/contact" className="hover:text-[#e2725b] text-black duration-300">
             Contact
