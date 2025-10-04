@@ -35,7 +35,7 @@ export default function FAQs() {
             </div>
             <div className="flex flex-col text-lg">
               <p>Yes. I offer virtual counselling to clients anywhere in British Columbia using a secure video platform.</p>
-              <p>If you are looking for in-person sessions, I see clients at the EMDR Therapy Group in Vancouver. You can view my schedule and book in-person appointments through <a href="https://emdrbc.janeapp.com/">EMDR Therapy Group</a>.</p>
+              <p>If you are looking for in-person sessions, I see clients at the EMDR Therapy Group in Vancouver. You can view my schedule and book in-person appointments through <a href="https://emdrbc.janeapp.com/" className="text-blue-600">EMDR Therapy Group</a>.</p>
             </div>
           </div>
           <div className="grid md:grid-cols-2 gap-2 mb-20">
