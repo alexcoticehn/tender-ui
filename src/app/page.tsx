@@ -32,18 +32,18 @@ export default function Home() {
         <section className="mx-auto mt-12 bg-[#495a58] text-white">
           <div className="max-w-7xl mx-auto px-4 py-12">
             <h2 className="text-6xl mb-4 font-serif">Services</h2>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-6 mt-5">
               <div className="flex flex-col items-center justify-center">
-                <Link href="/" className="text-2xl font-semibold hover:underline">Individual Counselling</Link>
-                <Image src="/images/logo.png" alt="Individual Counselling" width={200} height={200} />
+                <Link href="/" className="text-xl hover:underline mb-5">Individual Counselling</Link>
+                <Image src="/images/individual_counselling.jpg" alt="Individual Counselling" width={375} height={300} />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <Link href="/" className="text-2xl font-semibold hover:underline">EMDR Therapy</Link>
-                <Image src="/images/logo.png" alt="EMDR Therapy" width={200} height={200} />
+                <Link href="/" className="text-xl hover:underline mb-5">EMDR Therapy</Link>
+                <Image src="/images/house_landscape.jpg" alt="EMDR Therapy" width={345} height={280} />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <Link href="/" className="text-2xl font-semibold hover:underline">Group Counselling</Link>
-                <Image src="/images/logo.png" alt="Group Counselling" width={200} height={200} />
+                <Link href="/" className="text-xl hover:underline mb-5">Group Counselling</Link>
+                <Image src="/images/relationship_counselling.jpg" alt="Group Counselling" width={350} height={300} />
               </div>
             </div>
           </div>
