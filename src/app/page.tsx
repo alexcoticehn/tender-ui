@@ -31,7 +31,7 @@ export default function Home() {
 
         <section className="mx-auto mt-12 bg-[#495a58] text-white">
           <div className="max-w-7xl mx-auto px-4 py-12">
-            <h2 className="text-6xl mb-4 font-serif">Services</h2>
+            <h2 className="text-6xl mb-4 font-serif text-center">Services</h2>
             <div className="grid md:grid-cols-3 gap-6 mt-5">
               <div className="flex flex-col items-center justify-center">
                 <Link href="/" className="text-xl hover:underline mb-5">Individual Counselling</Link>
