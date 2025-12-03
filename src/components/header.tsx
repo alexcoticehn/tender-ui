@@ -43,13 +43,13 @@ export default function Header() {
 
         {mobileOpen && (
           <div className="absolute top-0 left-0 w-full h-screen bg-white flex flex-col items-center justify-center gap-8 text-2xl font-serif z-10">
-            <Link href="/" onClick={() => setMobileOpen(false)} className="hover:text-[#e2725b]">Home</Link>
-            <Link href="/about" onClick={() => setMobileOpen(false)} className="hover:text-[#e2725b]">About</Link>
-            <Link href="/services" onClick={() => setMobileOpen(false)} className="hover:text-[#e2725b]">Services</Link>
-            <Link href="/emdr" onClick={() => setMobileOpen(false)} className="hover:text-[#e2725b]">EMDR</Link>
-            <Link href="/rates" onClick={() => setMobileOpen(false)} className="hover:text-[#e2725b]">Rates</Link>
-            <Link href="/faqs" onClick={() => setMobileOpen(false)} className="hover:text-[#e2725b]">FAQs</Link>
-            <Link href="/contact" onClick={() => setMobileOpen(false)} className="hover:text-[#e2725b]">Contact</Link>
+            <Link href="/" onClick={() => setMobileOpen(false)} className={`hover:text-[#e2725b] ${pathname === '/' ? 'underline underline-offset-4' : ''}`}>Home</Link>
+            <Link href="/about" onClick={() => setMobileOpen(false)} className={`hover:text-[#e2725b] ${pathname === '/about' ? 'underline underline-offset-4' : ''}`}>About</Link>
+            <Link href="/services" onClick={() => setMobileOpen(false)} className={`hover:text-[#e2725b] ${pathname === '/services' ? 'underline underline-offset-4' : ''}`}>Services</Link>
+            <Link href="/emdr" onClick={() => setMobileOpen(false)} className={`hover:text-[#e2725b] ${pathname === '/emdr' ? 'underline underline-offset-4' : ''}`}>EMDR</Link>
+            <Link href="/rates" onClick={() => setMobileOpen(false)} className={`hover:text-[#e2725b] ${pathname === '/rates' ? 'underline underline-offset-4' : ''}`}>Rates</Link>
+            <Link href="/faqs" onClick={() => setMobileOpen(false)} className={`hover:text-[#e2725b] ${pathname === '/faqs' ? 'underline underline-offset-4' : ''}`}>FAQs</Link>
+            <Link href="/contact" onClick={() => setMobileOpen(false)} className={`hover:text-[#e2725b] ${pathname === '/contact' ? 'underline underline-offset-4' : ''}`}>Contact</Link>
           </div>
         )}
       </nav>
