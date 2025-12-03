@@ -3,10 +3,12 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="w-full">
@@ -22,13 +24,13 @@ export default function Header() {
           </Link>
           
           <div className="hidden md:flex gap-10 font-serif text-lg">
-            <Link href="/" className="hover:text-[#e2725b]">Home</Link>
-            <Link href="/about" className="hover:text-[#e2725b]">About</Link>
-            <Link href="/services" className="hover:text-[#e2725b]">Services</Link>
-            <Link href="/emdr" className="hover:text-[#e2725b]">EMDR</Link>
-            <Link href="/rates" className="hover:text-[#e2725b]">Rates</Link>
-            <Link href="/faqs" className="hover:text-[#e2725b]">FAQs</Link>
-            <Link href="/contact" className="hover:text-[#e2725b]">Contact</Link>
+            <Link href="/" className={`hover:text-[#e2725b] ${pathname === '/' ? 'underline underline-offset-4' : ''}`}>Home</Link>
+            <Link href="/about" className={`hover:text-[#e2725b] ${pathname === '/about' ? 'underline underline-offset-4' : ''}`}>About</Link>
+            <Link href="/services" className={`hover:text-[#e2725b] ${pathname === '/services' ? 'underline underline-offset-4' : ''}`}>Services</Link>
+            <Link href="/emdr" className={`hover:text-[#e2725b] ${pathname === '/emdr' ? 'underline underline-offset-4' : ''}`}>EMDR</Link>
+            <Link href="/rates" className={`hover:text-[#e2725b] ${pathname === '/rates' ? 'underline underline-offset-4' : ''}`}>Rates</Link>
+            <Link href="/faqs" className={`hover:text-[#e2725b] ${pathname === '/faqs' ? 'underline underline-offset-4' : ''}`}>FAQs</Link>
+            <Link href="/contact" className={`hover:text-[#e2725b] ${pathname === '/contact' ? 'underline underline-offset-4' : ''}`}>Contact</Link>
           </div>
         </div>
 
