@@ -11,7 +11,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="w-full fixed top-0 left-0 right-0 z-50">
+    <header className="w-full fixed top-0 left-0 right-0 z-50 md:bg-gradient-to-b md:from-white md:via-white md:to-transparent">
       <nav className="w-full px-4 sm:px-6 lg:px-8 py-6 flex justify-between pointer-events-auto">
         <div className="flex items-center gap-5">
           <Link href="/" className="z-20 relative">
