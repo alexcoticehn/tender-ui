@@ -1,14 +1,7 @@
-import Header from "@/components/header";
-
 export default function FAQs() {
   return (
     <div className="min-h-screen text-black font-serif">
-      <div className="mx-auto px-4 py-4 flex flex-col md:ml-auto bg-cover bg-center pointer-events-none">
-          <div className="relative flex flex-row">
-          <Header />
-          </div>
-      </div>
-      <section className="mx-50">
+      <section className="mx-50 pt-24">
           <h2 className="text-4xl mb-10 text-center">Frequently Asked Questions</h2>
           <div className="grid md:grid-cols-2 gap-2 mb-20">
             <div className="flex flex-col text-2xl text-center">

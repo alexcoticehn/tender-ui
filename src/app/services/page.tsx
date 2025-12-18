@@ -1,11 +1,9 @@
-import Header from "@/components/header";
 import Image from "next/image";
 
 export default function Services() {
   return (
     <div className="min-h-screen font-serif">
-        <section className="mx-auto px-4 py-4 flex flex-col bg-[#495a58] bg-cover pointer-events-none">
-          <Header />
+        <section className="mx-auto px-4 py-4 flex flex-col bg-[#495a58] bg-cover pointer-events-none pt-24">
           <h1 className="text-3xl mt-4 text-[#d4967d] mx-auto flex flex-row">Services</h1>
           <div className="grid md:grid-cols-3 gap-6 mt-4 content-start">
             <div className="flex flex-col bg-white mx-auto pt-5">

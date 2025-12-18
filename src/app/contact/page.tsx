@@ -1,5 +1,4 @@
 "use client";
-import Header from "@/components/header";
 import { useState } from "react";
 
 export default function Contact() {
@@ -19,12 +18,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen text-black font-serif">
-      <div className="mx-auto px-4 py-4 flex flex-col md:ml-auto bg-cover bg-center pointer-events-none">
-          <div className="relative flex flex-row">
-          <Header />
-          </div>
-      </div>
+    <div className="min-h-screen text-black font-serif pt-24">
         <h1 className="text-3xl font-semibold text-center mb-8">Contact Us</h1>
 
         <form onSubmit={handleSubmit} className="space-y-6 mx-50">

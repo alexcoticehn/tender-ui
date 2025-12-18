@@ -1,18 +1,14 @@
 import Image from "next/image";
-import Header from "@/components/header";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="min-h-screen text-gray-900 font-serif">
-          <div className="mx-auto px-4 py-4 flex flex-col md:ml-auto bg-[url(/images/hero-trees-cropped_1.png)] bg-cover bg-size-75 min-h-150 pointer-events-none">
-          <div className="relative flex flex-row">
-          <Header />
-          </div>
-          <div className="relative inset-0 flex flex-col justify-end text-white px-4 sm:px-6 lg:px-8 pointer-events-none font-serif bottom-4 text-left mt-auto">
-            <h1 className="text-4xl font-bold mb-2">Megan Yerxa - Tender Counselling</h1>
-            <p className="text-xl">Steady support across shifting waters</p>
-          </div>
+          <div className="mx-auto px-4 py-4 flex flex-col md:ml-auto bg-[url(/images/hero-trees-cropped_1.png)] bg-cover bg-size-75 min-h-150 pointer-events-none pt-24">
+            <div className="relative inset-0 flex flex-col justify-end text-white px-4 sm:px-6 lg:px-8 pointer-events-none font-serif bottom-4 text-left mt-auto">
+              <h1 className="text-4xl font-bold mb-2">Megan Yerxa - Tender Counselling</h1>
+              <p className="text-xl">Steady support across shifting waters</p>
+            </div>
           </div>
 
         <section className="max-w-5xl mx-auto mt-12 px-4">

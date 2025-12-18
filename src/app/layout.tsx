@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import Header from "@/components/header";
 import { Footer } from "@/components/footer";
 
 export const metadata = {
@@ -14,6 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href="/images/favicon.ico" />
       </head>
       <body>
+        <Header />
         <main className="space-y-10 container">
           {children}
         </main>
