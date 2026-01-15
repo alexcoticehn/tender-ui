@@ -9,80 +9,83 @@ export default function EMDRTherapy() {
             <p className="text-xl">Healing the past - safely and at your pace</p>
           </div>
       </div>
-        <div className="mx-10 pt-20 text-2xl">
-          <p className="mb-4">EMDR (Eye Movement Desensitization and Reprocessing) is a research-supported therapy that helps people process distressing experiences and reconnect with a sense of calm and safety in the present. It is widely recognized by the World Health Organization and American Psychiatric Association as an effective treatment for trauma, anxiety, and other emotional difficulties.</p>
-          <p className="mb-4">Unlike traditional talk therapy, EMDR works directly with the nervous system. If you&apos;ve ever felt stuck, logically knowing something is over but still feeling it in your body, EMDR may help bridge that gap.</p>
+      <div className="grid md:grid-cols-5 pt-5 gap-5 mx-8 my-8">
+        <div className="flex flex-col md:col-span-2">
+          <Image src="/images/emdr_intro.png" alt="" width={500} height={500} className="object-cover w-full" />
         </div>
-
-        <div className="grid md:grid-cols-2 pt-5 gap-3 mx-4">
-          <div className="flex flex-col">
-          <h2 className="text-2xl font-semibold mb-4">How EMDR Works</h2>
+        <div className="flex flex-col mx-10 md:col-span-3">
+          <h2 className="text-2xl font-semibold mb-4 mx-auto mt-6">What Is EMDR?</h2>
+          <p className="mb-4 text-xl">EMDR (Eye Movement Desensitization and Reprocessing) is a research-supported therapy that helps people process distressing experiences and reconnect with a sense of calm and safety in the present. It is widely recognized by the World Health Organization and American Psychiatric Association as an effective treatment for trauma, anxiety, and other emotional difficulties.</p>
+          <p className="mb-4 text-xl">Unlike traditional talk therapy, EMDR works directly with the nervous system. If you&apos;ve ever felt stuck, logically knowing something is over but still feeling it in your body, EMDR may help bridge that gap.</p>
+        </div>
+        <div className="flex flex-col mx-10 md:col-span-3">
+          <h2 className="text-2xl font-semibold mb-4 mx-auto mt-6">How EMDR Works</h2>
           <p className="mb-4 text-xl">When we experience trauma, the brain&apos;s ability to process information can become overwhelmed. Instead of fully integrating what happened, the experience may get stuck, showing up later as anxiety, emotional reactivity, or shutdown.</p>
           <p className="mb-4 text-xl">EMDR uses bilateral stimulation, like tapping or eye movements, to support the brain&apos;s natural healing process. This is similar to what happens during REM sleep. Over time, EMDR helps reduce the emotional charge of difficult memories, so they feel more like something that happened and less like something that is still happening.</p>
+        </div>
+        <div className="flex flex-col md:col-span-2">
+          <Image src="/images/emdr_process.jpeg" alt="" width={500} height={500} className="object-cover w-full" />
+        </div>
+      </div>
+
+      <section className="mx-8">
+        <h2 className="text-2xl font-semibold mb-4">What to Expect</h2>
+        <p className="mb-4">EMDR is more than just eye movements. It is a carefully structured process designed to support safety, readiness, and trust. We&apos;ll move through eight flexible phases, always guided by your comfort and goals.</p>
+        <div className="grid md:grid-cols-3 gap-8 mb-4">
+          <div className="flex flex-col">
+            <p className="text-xl">Phase 1: History and Mapping</p>
+            <p>We explore your history and begin identifying themes, memories, and patterns that are connected to your current struggles. This creates a roadmap for our work together.</p>
           </div>
           <div className="flex flex-col">
-            <Image src="/images/emdr_process.jpeg" alt="" width={500} height={500} className="object-cover w-full" />
+            <p className="text-xl">Phase 2: Preparation and Safety</p>
+            <p>We build grounding skills, practice bilateral stimulation, and ensure you feel supported before any memory work begins. This stage helps strengthen your internal resources.</p>
+          </div>
+          <div className="flex flex-col">
+            <p className="text-xl">Phase 3: Assessment</p>
+            <p>We select a target memory and identify the thoughts, emotions, and body sensations connected to it. This helps activate the memory in a manageable and structured way.</p>
+          </div>
+          <div className="flex flex-col">
+            <p className="text-xl">Phase 4: Desensitization</p>
+            <p>Using bilateral stimulation, we begin processing the memory. You don&apos;t need to relive or retell every detail. We will simply notice what arises, and I will guide you in staying grounded throughout.</p>
+          </div>
+          <div className="flex flex-col">
+            <p className="text-xl">Phase 5: Installation</p>
+            <p>We focus on strengthening a more adaptive belief, such as shifting from &quot;I&apos;m not safe&quot; to &quot;I can protect myself.&quot; This belief is integrated using further bilateral stimulation.</p>
+          </div>
+          <div className="flex flex-col">
+            <p className="text-xl">Phase 6: Body Scan</p>
+            <p>We check in with your body to release any lingering tension or discomfort. EMDR helps integrate healing on both emotional and physical levels.</p>
+          </div>
+          <div className="flex flex-col">
+            <p className="text-xl">Phase 7: Closure</p>
+            <p>We wrap up the session with grounding and reflection, making sure you feel regulated and supported before the session ends.</p>
+          </div>
+          <div className="flex flex-col">
+            <p className="text-xl">Phase 8: Re-evaluation</p>
+            <p>In our next session, we check in on what has changed. If the memory still holds emotional charge, we return to it or move on to the next target depending on your readiness.</p>
           </div>
         </div>
+      </section>
 
-        <section className="mx-8">
-          <h2 className="text-2xl font-semibold mb-4">What to Expect</h2>
-          <p className="mb-4">EMDR is more than just eye movements. It is a carefully structured process designed to support safety, readiness, and trust. We&apos;ll move through eight flexible phases, always guided by your comfort and goals.</p>
-          <div className="grid md:grid-cols-3 gap-8 mb-4">
-            <div className="flex flex-col">
-              <p className="text-xl">Phase 1: History and Mapping</p>
-              <p>We explore your history and begin identifying themes, memories, and patterns that are connected to your current struggles. This creates a roadmap for our work together.</p>
-            </div>
-            <div className="flex flex-col">
-              <p className="text-xl">Phase 2: Preparation and Safety</p>
-              <p>We build grounding skills, practice bilateral stimulation, and ensure you feel supported before any memory work begins. This stage helps strengthen your internal resources.</p>
-            </div>
-            <div className="flex flex-col">
-              <p className="text-xl">Phase 3: Assessment</p>
-              <p>We select a target memory and identify the thoughts, emotions, and body sensations connected to it. This helps activate the memory in a manageable and structured way.</p>
-            </div>
-            <div className="flex flex-col">
-              <p className="text-xl">Phase 4: Desensitization</p>
-              <p>Using bilateral stimulation, we begin processing the memory. You don&apos;t need to relive or retell every detail. We will simply notice what arises, and I will guide you in staying grounded throughout.</p>
-            </div>
-            <div className="flex flex-col">
-              <p className="text-xl">Phase 5: Installation</p>
-              <p>We focus on strengthening a more adaptive belief, such as shifting from &quot;I&apos;m not safe&quot; to &quot;I can protect myself.&quot; This belief is integrated using further bilateral stimulation.</p>
-            </div>
-            <div className="flex flex-col">
-              <p className="text-xl">Phase 6: Body Scan</p>
-              <p>We check in with your body to release any lingering tension or discomfort. EMDR helps integrate healing on both emotional and physical levels.</p>
-            </div>
-            <div className="flex flex-col">
-              <p className="text-xl">Phase 7: Closure</p>
-              <p>We wrap up the session with grounding and reflection, making sure you feel regulated and supported before the session ends.</p>
-            </div>
-            <div className="flex flex-col">
-              <p className="text-xl">Phase 8: Re-evaluation</p>
-              <p>In our next session, we check in on what has changed. If the memory still holds emotional charge, we return to it or move on to the next target depending on your readiness.</p>
-            </div>
-          </div>
-        </section>
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Is EMDR Right for You?</h2>
+        <p className="mb-4">EMDR can support a wide range of concerns including:</p>
+        <ul className="list-disc list-inside space-y-2">
+          <li>PTSD and complex trauma</li>
+          <li>Anxiety and panic</li>
+          <li>Grief and loss</li>
+          <li>Chronic stress or burnout</li>
+          <li>Low self-worth or shame</li>
+          <li>Distressing memories or flashbacks</li>
+        </ul>
+        <p className="mt-4">You don&apos;t need to have a “big T” trauma to benefit. EMDR is about helping you feel more at ease in your own mind and body.</p>
+      </section>
 
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">Is EMDR Right for You?</h2>
-          <p className="mb-4">EMDR can support a wide range of concerns including:</p>
-          <ul className="list-disc list-inside space-y-2">
-            <li>PTSD and complex trauma</li>
-            <li>Anxiety and panic</li>
-            <li>Grief and loss</li>
-            <li>Chronic stress or burnout</li>
-            <li>Low self-worth or shame</li>
-            <li>Distressing memories or flashbacks</li>
-          </ul>
-          <p className="mt-4">You don&apos;t need to have a “big T” trauma to benefit. EMDR is about helping you feel more at ease in your own mind and body.</p>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">Your Role in EMDR</h2>
-          <p className="mb-4">You do not have to do it perfectly. You do not even need to have the words. Your job is simply to notice what comes up, and I will be there to guide, support, and adapt the process to your needs.</p>
-          <p>If you&apos;re curious about whether EMDR is a good fit for you, we can talk more during a free consultation.</p>
-        </section>
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Your Role in EMDR</h2>
+        <p className="mb-4">You do not have to do it perfectly. You do not even need to have the words. Your job is simply to notice what comes up, and I will be there to guide, support, and adapt the process to your needs.</p>
+        <p>If you&apos;re curious about whether EMDR is a good fit for you, we can talk more during a free consultation.</p>
+      </section>
     </div>
   );
 }
