@@ -67,25 +67,35 @@ export default function EMDRTherapy() {
         </div>
       </section>
 
-      <section className="mx-10">
-        <h2 className="text-2xl font-semibold mb-4">Is EMDR Right for You?</h2>
-        <p className="mb-4">EMDR can support a wide range of concerns including:</p>
-        <ul className="list-disc list-inside space-y-2">
-          <li>PTSD and complex trauma</li>
-          <li>Anxiety and panic</li>
-          <li>Grief and loss</li>
-          <li>Chronic stress or burnout</li>
-          <li>Low self-worth or shame</li>
-          <li>Distressing memories or flashbacks</li>
-        </ul>
-        <p className="mt-4">You don&apos;t need to have a “big T” trauma to benefit. EMDR is about helping you feel more at ease in your own mind and body.</p>
-      </section>
+      <div className="mx-8 grid md:grid-cols-5 gap-5 pt-5 my-8">
+        <div className="flex flex-col md:col-span-2 order-1 md:order-none">
+          <Image src="/images/emdr_4.jpg" alt="" width={500} height={500} className="object-cover w-full h-auto" />
+        </div>
+        <div className="flex flex-col mx-10 md:col-span-3 order-2 md:order-none">
+          <h2 className="text-2xl font-semibold mb-8 w-full border-b-2 border-gray-600 pb-6 text-center">Is EMDR Right for You?</h2>
+          <p className="mb-4 text-xl mt-6">EMDR can support a wide range of concerns including:</p>
+          <ul className="list-disc list-inside space-y-2">
+            <li>PTSD and complex trauma</li>
+            <li>Anxiety and panic</li>
+            <li>Grief and loss</li>
+            <li>Chronic stress or burnout</li>
+            <li>Low self-worth or shame</li>
+            <li>Distressing memories or flashbacks</li>
+          </ul>
+          <p className="mt-4 text-xl">You don&apos;t need to have a &quot;big T&quot; trauma to benefit. EMDR is about helping you feel more at ease in your own mind and body.</p>
+        </div>
+      </div>
 
-      <section className="mx-10 mt-8">
-        <h2 className="text-2xl font-semibold mb-4">Your Role in EMDR</h2>
-        <p className="mb-4">You do not have to do it perfectly. You do not even need to have the words. Your job is simply to notice what comes up, and I will be there to guide, support, and adapt the process to your needs.</p>
-        <p>If you&apos;re curious about whether EMDR is a good fit for you, we can talk more during a free consultation.</p>
-      </section>
+      <div className="mx-8 grid md:grid-cols-5 gap-5 pt-5 my-8">
+        <div className="flex flex-col mx-10 md:col-span-3 order-2 md:order-1">
+          <h2 className="text-2xl font-semibold mb-8 w-full border-b-2 border-gray-600 pb-6 text-center">Your Role in EMDR</h2>
+          <p className="mb-4 text-xl mt-6">You do not have to do it perfectly. You do not even need to have the words. Your job is simply to notice what comes up, and I will be there to guide, support, and adapt the process to your needs.</p>
+          <p className="text-xl">If you&apos;re curious about whether EMDR is a good fit for you, we can talk more during a free consultation.</p>
+        </div>
+        <div className="flex flex-col md:col-span-2 order-1 md:order-2">
+          <Image src="/images/emdr_3.png" alt="" width={500} height={500} className="object-cover w-full" />
+        </div>
+      </div>
     </div>
   );
 }
