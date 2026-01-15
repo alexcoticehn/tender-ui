@@ -10,20 +10,20 @@ export default function EMDRTherapy() {
           </div>
       </div>
       <div className="grid md:grid-cols-5 pt-5 gap-5 mx-8 my-8">
-        <div className="flex flex-col md:col-span-2">
+        <div className="flex flex-col md:col-span-2 order-1 md:order-none">
           <Image src="/images/emdr_intro.png" alt="" width={500} height={500} className="object-cover w-full" />
         </div>
-        <div className="flex flex-col mx-10 md:col-span-3">
+        <div className="flex flex-col mx-10 md:col-span-3 order-2 md:order-none">
           <h2 className="text-2xl font-semibold mb-8 mx-auto mt-6 w-full border-b-2 border-gray-600 pb-6 text-center">What Is EMDR?</h2>
           <p className="mb-4 text-xl mt-6">EMDR (Eye Movement Desensitization and Reprocessing) is a research-supported therapy that helps people process distressing experiences and reconnect with a sense of calm and safety in the present. It is widely recognized by the World Health Organization and American Psychiatric Association as an effective treatment for trauma, anxiety, and other emotional difficulties.</p>
           <p className="mb-4 text-xl">Unlike traditional talk therapy, EMDR works directly with the nervous system. If you&apos;ve ever felt stuck, logically knowing something is over but still feeling it in your body, EMDR may help bridge that gap.</p>
         </div>
-        <div className="flex flex-col mx-10 md:col-span-3">
+        <div className="flex flex-col mx-10 md:col-span-3 order-4 md:order-none">
           <h2 className="text-2xl font-semibold mb-8 mx-auto mt-6 w-full border-b-2 border-gray-600 pb-6 text-center">How EMDR Works</h2>
           <p className="mb-4 text-xl mt-6">When we experience trauma, the brain&apos;s ability to process information can become overwhelmed. Instead of fully integrating what happened, the experience may get stuck, showing up later as anxiety, emotional reactivity, or shutdown.</p>
           <p className="mb-4 text-xl">EMDR uses bilateral stimulation, like tapping or eye movements, to support the brain&apos;s natural healing process. This is similar to what happens during REM sleep. Over time, EMDR helps reduce the emotional charge of difficult memories, so they feel more like something that happened and less like something that is still happening.</p>
         </div>
-        <div className="flex flex-col md:col-span-2">
+        <div className="flex flex-col md:col-span-2 order-3 md:order-none">
           <Image src="/images/emdr_process.jpeg" alt="" width={500} height={500} className="object-cover w-full" />
         </div>
       </div>
