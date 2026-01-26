@@ -9,7 +9,7 @@ export default function About() {
           </div>
         </div>
         <div className="grid md:grid-cols-5 pt-5 gap-5 mx-8 my-8">
-          <div className="flex flex-col md:col-span-2 order-1 md:order-none">
+          <div className="flex flex-col md:col-span-2 order-1 md:order-none self-center">
             <Image src="/images/emdr_intro.png" alt="" width={500} height={500} className="object-cover w-full" />
           </div>
           <div className="flex flex-col mx-10 md:col-span-3 order-2 md:order-none">
@@ -32,7 +32,7 @@ export default function About() {
                 As a queer person, I care deeply about creating a space where all identities, relationship structures, and lived experiences are seen and respected.
                 My practice is actively inclusive, anti-oppressive, and grounded in ongoing reflection and accountability.</p>
           </div>
-          <div className="flex flex-col md:col-span-2 order-3 md:order-none">
+          <div className="flex flex-col md:col-span-2 order-3 md:order-none self-center">
             <Image src="/images/emdr_process.jpeg" alt="" width={500} height={500} className="object-cover w-full" />
           </div>
         </div>
