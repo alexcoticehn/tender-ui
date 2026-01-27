@@ -3,14 +3,14 @@ import Image from "next/image";
 export default function About() {
   return (
       <div className="min-h-screen text-black font-serif">
-        <div className="mx-auto px-4 py-4 flex flex-col md:ml-auto bg-[url(/images/hero-trees-cropped_1.png)] bg-cover bg-size-75 min-h-150 pointer-events-none pt-24">
+        <div className="mx-auto px-4 py-4 flex flex-col md:ml-auto bg-[url(/images/about_background.png)] bg-cover bg-size-75 bg-bottom min-h-150 pointer-events-none pt-24">
           <div className="relative inset-0 flex flex-col justify-end text-white px-4 sm:px-6 lg:px-8 pointer-events-none font-serif bottom-4 text-left mt-auto">
             <h1 className="text-4xl font-bold mb-2">About</h1>
           </div>
         </div>
         <div className="grid md:grid-cols-5 pt-5 gap-5 mx-8 my-8">
           <div className="flex flex-col md:col-span-2 order-1 md:order-none self-center">
-            <Image src="/images/emdr_intro.png" alt="" width={500} height={500} className="object-cover w-full" />
+            <Image src="/images/mountain_valley.png" alt="" width={500} height={500} className="object-cover w-full" />
           </div>
           <div className="flex flex-col mx-10 md:col-span-3 order-2 md:order-none">
             <h2 className="text-2xl font-semibold mb-8 mx-auto mt-6 w-full border-b-2 border-gray-600 pb-6 text-center">A Grounded, Compassionate Approach</h2>
@@ -33,7 +33,7 @@ export default function About() {
                 My practice is actively inclusive, anti-oppressive, and grounded in ongoing reflection and accountability.</p>
           </div>
           <div className="flex flex-col md:col-span-2 order-3 md:order-none self-center">
-            <Image src="/images/emdr_process.jpeg" alt="" width={500} height={500} className="object-cover w-full" />
+            <Image src="/images/grass_mountain.png" alt="" width={500} height={500} className="object-cover w-full" />
           </div>
         </div>
         <section className="mx-auto bg-[#495a58] flex flex-col gap-4">
