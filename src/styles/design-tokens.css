@@ -1,0 +1,73 @@
+/* Design Tokens - Color Variables */
+
+:root {
+  /* Primary Colors - Terracotta */
+  --color-primary-50: #F5EDE5;
+  --color-primary-100: #EDD9CC;
+  --color-primary-200: #E0BFA8;
+  --color-primary-300: #D4A584;
+  --color-primary-400: #C78B5F;
+  --color-primary-500: #A55D35;
+  --color-primary-600: #945228;
+  --color-primary-700: #7d451f;
+  --color-primary-800: #663916;
+  --color-primary-900: #4f2d0d;
+  --color-primary-950: #382008;
+
+  /* Earth Tone Palette */
+  --color-earth-tan: #F0EDE5;
+  --color-earth-brown: #6B4C3A;
+  --color-earth-sage: #5C7A68;
+  --color-earth-moss: #3F6A5C;
+
+  /* Accent Colors */
+  --color-accent-sage: #5C7A68;
+  --color-accent-ochre: #C196AB;
+
+  /* Neutral Palette */
+  --color-neutral-50: #FFFFFF;
+  --color-neutral-100: #FDFCFB;
+  --color-neutral-200: #FAF7F3;
+  --color-neutral-300: #F5EDE5;
+  --color-neutral-400: #F0EDE5;
+  --color-neutral-500: #E0BFA8;
+  --color-neutral-600: #D9D2C7;
+  --color-neutral-700: #5C7A68;
+  --color-neutral-800: #2E4A3F;
+  --color-neutral-900: #3A5F70;
+  --color-neutral-950: #1F3E52;
+
+  /* Semantic Colors */
+  --color-success: #2D6A4F;
+  --color-warning: #D4A574;
+  --color-error: #A64253;
+  --color-info: #3A5F70;
+
+  /* Text Colors */
+  --color-text-primary: #1F3E52;
+  --color-text-secondary: #3F6A5C;
+  --color-text-tertiary: #D9D2C7;
+  --color-text-inverse: #FFFFFF;
+
+  /* Background Colors */
+  --color-background-primary: #FFFFFF;
+  --color-background-secondary: #F0EDE5;
+  --color-background-tertiary: #D9D2C7;
+  --color-background-brand: #A55D35;
+}
+
+/* Utility classes for quick color access */
+.text-primary { color: var(--color-text-primary); }
+.text-secondary { color: var(--color-text-secondary); }
+.text-tertiary { color: var(--color-text-tertiary); }
+.text-inverse { color: var(--color-text-inverse); }
+
+.bg-primary { background-color: var(--color-background-primary); }
+.bg-secondary { background-color: var(--color-background-secondary); }
+.bg-tertiary { background-color: var(--color-background-tertiary); }
+.bg-brand { background-color: var(--color-background-brand); }
+
+.border-primary { border-color: var(--color-primary-500); }
+.border-success { border-color: var(--color-success); }
+.border-warning { border-color: var(--color-warning); }
+.border-error { border-color: var(--color-error); }
