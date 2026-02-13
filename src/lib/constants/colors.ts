@@ -32,7 +32,7 @@ export const ACCENT_COLORS = {
   ochre: '#C196AB', // Golden Olive/Ochre Highlight
 } as const;
 
-// Neutral Palette
+// Neutral Palette - Extended Scale
 export const NEUTRAL_COLORS = {
   50: '#FFFFFF',
   100: '#FDFCFB',
@@ -71,7 +71,7 @@ export const BG_COLORS = {
   brand: '#A55D35', // Terracotta
 } as const;
 
-// Convenience exports
+// Convenience export
 export const COLORS = {
   primary: PRIMARY_COLORS,
   earth: EARTH_COLORS,
@@ -82,7 +82,7 @@ export const COLORS = {
   bg: BG_COLORS,
 } as const;
 
-// Type exports for TypeScript
+// TypeScript Type Definitions
 export type PrimaryColor = keyof typeof PRIMARY_COLORS;
 export type EarthColor = keyof typeof EARTH_COLORS;
 export type AccentColor = keyof typeof ACCENT_COLORS;
