@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        container: '1280px',
+      },
       fontFamily: {
         primary: "['Montserrat', 'sans-serif']",
         accent: "['Nothing You Could Do', 'cursive']",

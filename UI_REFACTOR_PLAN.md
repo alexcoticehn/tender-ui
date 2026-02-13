@@ -45,11 +45,11 @@ Before implementation, finalize these decisions:
 - [x] Letter spacing for readability
 
 ### Spacing & Layout
-- [ ] Base spacing unit (8px recommended)
-- [ ] Container max-width (1280px recommended)
-- [ ] Gutter width (responsive breakpoints)
-- [ ] Padding standards for different components
-- [ ] Margin collapse strategy
+- [x] Base spacing unit (4px scale implemented in Tailwind)
+- [x] Container max-width (1280px)
+- [x] Gutter width (responsive: 16px mobile, 24px tablet, 40px desktop)
+- [x] Padding standards for different components
+- [x] Margin collapse strategy (vertical spacing via space-y utilities)
 
 ### Components & Patterns
 - [ ] Button styles (primary, secondary, tertiary, sizes)
@@ -1315,16 +1315,17 @@ src/
 - [ ] Create git branch for refactor work
 
 ### Phase 1 Checklist
-- [x] Define all color tokens in hex format (deployed)
-- [ ] Define typography scale (Ticket 2)
-- [x] Set up Tailwind configuration with new tokens (deployed)
-- [x] Create design-tokens.css file (deployed)
-- [ ] Create reusable button component (Ticket 2)
-- [ ] Create reusable card component (Ticket 2)
-- [ ] Update globals.css with new theme variables (Ticket 3)
-- [ ] Test token application across browser console (Ticket 3)
-- [ ] Document all design decisions (Ticket 1 - DONE)
-- [ ] Get stakeholder approval (Ticket 1 - PENDING)
+- [x] Define all color tokens in hex format (Ticket 1 - deployed)
+- [x] Define typography scale (Ticket 2 - deployed)
+- [x] Set up Tailwind configuration with new tokens (Tickets 1-3 - deployed)
+- [x] Create design-tokens.css file (Ticket 1 - deployed)
+- [x] Update globals.css with new theme variables (Ticket 3 - deployed gutter widths)
+- [x] Spacing and layout system (Ticket 3 - deployed)
+- [ ] Create reusable button component (Ticket 4)
+- [ ] Create reusable card component (Ticket 4)
+- [ ] Test token application in browser (Ticket 5)
+- [ ] Document all design decisions (✅ Complete - all tickets documented)
+- [ ] Get stakeholder approval (⏳ Pending)
 
 ### Phase 2 Checklist
 - [ ] Refactor header component with new tokens
@@ -1524,6 +1525,52 @@ src/
 **Status:** Ready for next phase. Typography system fully integrated and ready for component implementation.
 
 ---
+
+### Ticket 3: Spacing & Layout System ✅ COMPLETE
+
+**Completed:** February 12, 2026
+
+**Deliverables:**
+- [x] Confirmed 4px base spacing unit (already implemented in Tailwind)
+- [x] Set container max-width: 1280px (centered on larger screens)
+- [x] Defined responsive gutter widths:
+  - Mobile (< 640px): 16px padding (px-4)
+  - Tablet (640-1024px): 24px padding (md:px-6)
+  - Desktop (1024px+): 40px padding (lg:px-10)
+  - **Implemented in `src/styles/globals.css` (body padding)**
+- [x] Set component padding standards:
+  - Hero sections: py-16 (64px) or py-20 (80px)
+  - Content sections: py-12 (48px) or py-16 (64px)
+  - Cards: p-6 (24px)
+  - Buttons: px-4 py-3 (16px horizontal, 12px vertical)
+  - Section gaps: space-y-12 or space-y-16
+- [x] Defined margin collapse strategy using Tailwind space-y utilities
+- [x] Confirmed default Tailwind responsive breakpoints (sm, md, lg, xl)
+- [x] Added container max-width to `tailwind.config.ts`
+
+**Spacing Scale (4px base unit):**
+- 1: 4px
+- 2: 8px
+- 3: 12px
+- 4: 16px
+- 5: 20px
+- 6: 24px
+- 8: 32px
+- 10: 40px
+- 12: 48px
+- 16: 64px
+
+**Design System Complete:**
+All three foundational tickets are now complete:
+1. ✅ Ticket 1: Color Palette
+2. ✅ Ticket 2: Typography System
+3. ✅ Ticket 3: Spacing & Layout System
+
+**Status:** Ready for Phase 2 - Header & Navigation Refactor
+
+---
+
+**Status:** Ready for next phase. Typography system fully integrated and ready for component implementation.
 
 **Status:** Ready for next phase. Color system is production-ready and can be applied to components.
 
