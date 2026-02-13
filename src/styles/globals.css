@@ -31,11 +31,11 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    border-color: var(--border);
   }
 
   body {
-    @apply bg-background text-foreground font-primary px-4 md:px-6 lg:px-10;
+    @apply bg-neutral-50 text-neutral-950 font-primary px-4 md:px-6 lg:px-10;
   }
 
   h1 {

@@ -18,6 +18,15 @@ const config: Config = {
         alternate2: "['Shadows Into Light Two', 'cursive']",
         mono: "['Geist Mono', 'monospace']",
       },
+      fontWeight: {
+        extralight: '200',
+        light: '300',
+        normal: '400',
+        medium: '500',
+        semibold: '600',
+        bold: '700',
+        extrabold: '800',
+      },
       colors: {
         primary: {
           50: '#F5EDE5',

@@ -1585,3 +1585,25 @@ All four foundational tickets are now complete:
 - [x] All Tailwind theme values complete and aligned with design system
 - [x] Updated globals.css theme colors to match new palette
 - [x] Added full-width utility class for full-bleed sections
+---
+
+## Future Review: TypeScript Constant Files Necessity
+
+**Status:** To Be Reviewed in Phase 3+  
+**Files in Question:**
+- `src/lib/constants/colors.ts` — TypeScript color constant definitions
+- `src/lib/constants/typography.ts` — TypeScript typography constant definitions
+
+**Context:**
+Phase 1 created both TypeScript constant files and Tailwind configuration entries with identical values. This creates redundancy:
+- **Colors:** Defined in both `tailwind.config.ts` theme AND `colors.ts` constants
+- **Typography:** Defined in both `tailwind.config.ts` fontWeight AND `typography.ts` constants
+
+**Observation:** Currently, all styling is done via Tailwind utilities (classNames). The TypeScript constants may not be used.
+
+**Action Item:** After Phase 3 (component refactoring), audit actual usage:
+- If only using Tailwind utilities in `className` → Consider removing TypeScript constants (single source of truth)
+- If using programmatic styling (style objects, library integrations) → Keep both with clear documentation
+- If mixed usage → Establish pattern for when to use which approach
+
+**Decision for Now:** Keep both files. Will assess necessity after components are built and patterns are clear.
