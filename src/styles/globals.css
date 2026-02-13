@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import "design-tokens.css";
+@import "./design-tokens.css";
 
 :root {
   --radius: 0.625rem;
@@ -69,10 +69,31 @@
   small {
     @apply text-sm font-normal leading-normal tracking-wide;
   }
+
+  /* Interactive elements: transitions */
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    @apply transition-all duration-200;
+  }
 }
 
 @layer components {
   .full-width {
     @apply -mx-4 md:-mx-6 lg:-mx-10;
+  }
+
+  /* Focus states: outline-based for visibility without rings */
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    @apply outline-2 outline-offset-1 outline-primary-600;
+  }
+
+  a:focus-visible {
+    @apply outline-2 outline-offset-1 outline-primary-600 underline underline-offset-2;
   }
 }
