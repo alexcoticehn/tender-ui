@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        primary: "['Montserrat', 'sans-serif']",
+        accent: "['Nothing You Could Do', 'cursive']",
+        alternate1: "['Quicksand', 'sans-serif']",
+        alternate2: "['Shadows Into Light Two', 'cursive']",
+        mono: "['Geist Mono', 'monospace']",
+      },
       colors: {
         primary: {
           50: '#F5EDE5',
@@ -49,11 +56,6 @@ const config: Config = {
         warning: '#D4A574',
         error: '#A64253',
         info: '#3A5F70',
-      },
-      fontFamily: {
-        serif: 'var(--font-serif, serif)',
-        sans: 'var(--font-sans, sans-serif)',
-        mono: 'Geist Mono, monospace',
       },
       fontSize: {
         xs: '12px',

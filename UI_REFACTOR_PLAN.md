@@ -37,12 +37,12 @@ Before implementation, finalize these decisions:
 - [x] Opacity/transparency standards for overlays and states
 
 ### Typography
-- [ ] Primary font family (serif vs. sans-serif for body)
-- [ ] Heading font scale (h1-h6 sizes in rem)
-- [ ] Body text size (base: 16px recommended)
-- [ ] Line height standards (1.5 for body, 1.2 for headings)
-- [ ] Font weights to use (regular, medium, semibold, bold)
-- [ ] Letter spacing for readability
+- [x] Primary font family (Montserrat - sans-serif)
+- [x] Heading font scale (h1-h6 sizes in px)
+- [x] Body text size (base: 16px)
+- [x] Line height standards (1.5 for body, 1.2 for headings)
+- [x] Font weights to use (200, 400, 600, 700)
+- [x] Letter spacing for readability
 
 ### Spacing & Layout
 - [ ] Base spacing unit (8px recommended)
@@ -1485,6 +1485,47 @@ src/
 **Status:** Ready for next phase. Color system is production-ready and can be applied to components.
 
 ---
+
+### Ticket 2: Typography System ✅ COMPLETE
+
+**Completed:** February 12, 2026
+
+**Deliverables:**
+- [x] Selected primary font: Montserrat (weights: 200, 300, 400, 500, 600, 700, 800, 900)
+- [x] Selected accent font: Nothing You Could Do (weight: 400)
+- [x] Selected alternate fonts: Quicksand, Shadows Into Light Two
+- [x] Defined heading scale (h1: 48px → h6: 18px)
+- [x] Defined body text: 16px, line-height 1.6
+- [x] Defined additional sizes: small (14px), caption (12px)
+- [x] Set font weights: 200 (Extralight), 400 (Regular), 600 (Semibold), 700 (Bold)
+- [x] Added letter spacing standards
+- [x] Created `/src/lib/constants/typography.ts` with TypeScript constants
+- [x] Updated `/src/styles/design-tokens.css` with typography CSS variables
+- [x] Updated `/tailwind.config.ts` with font family configuration
+- [x] Added Google Fonts imports to `src/app/layout.tsx`
+
+**Font Strategy:**
+- **Montserrat:** Primary font for all headings and body text
+  - H1-H2: Weight 200 (Extralight), -0.02em letter-spacing
+  - H3-H4: Weight 400 (Regular)
+  - H5-H6: Weight 600 (Semibold)
+  - Body: Weight 400, 1.6 line-height
+- **Nothing You Could Do:** Accent/special emphasis (testimonials, quotes)
+- **Quicksand:** Alternate modern sans-serif option
+- **Shadows Into Light Two:** Alternate decorative/handwriting font
+- **Geist Mono:** Code/technical content
+
+**Files Created/Modified:**
+1. `src/lib/constants/typography.ts` - Typography constants and type definitions
+2. `src/styles/design-tokens.css` - CSS variables for typography
+3. `tailwind.config.ts` - Font family extensions
+4. `src/app/layout.tsx` - Google Fonts integration
+
+**Status:** Ready for next phase. Typography system fully integrated and ready for component implementation.
+
+---
+
+**Status:** Ready for next phase. Color system is production-ready and can be applied to components.
 
 **Document Version:** 1.0
 **Last Updated:** February 11, 2026
