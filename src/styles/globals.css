@@ -1,37 +1,128 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import "./design-tokens.css";
 
-:root {
-  --radius: 0.625rem;
-  --background: #FFFFFF;
-  --foreground: #1F3E52;
-  --card: #F0EDE5;
-  --card-foreground: #1F3E52;
-  --popover: #FFFFFF;
-  --popover-foreground: #1F3E52;
-  --primary: #A55D35;
-  --primary-foreground: #FFFFFF;
-  --secondary: #5C7A68;
-  --secondary-foreground: #FFFFFF;
-  --muted: #D9D2C7;
-  --muted-foreground: #1F3E52;
-  --accent: #C196AB;
-  --accent-foreground: #FFFFFF;
-  --destructive: #A64253;
-  --border: #D9D2C7;
-  --input: #FFFFFF;
-  --ring: #A55D35;
-  --chart-1: #A55D35;
-  --chart-2: #5C7A68;
-  --chart-3: #3A5F70;
-  --chart-4: #C196AB;
-  --chart-5: #D4A574;
+@theme {
+  /* Colors - Primary (Terracotta) */
+  --color-primary-50: #F5EDE5;
+  --color-primary-100: #EDD9CC;
+  --color-primary-200: #E0BFA8;
+  --color-primary-300: #D4A584;
+  --color-primary-400: #C78B5F;
+  --color-primary-500: #A55D35;
+  --color-primary-600: #945228;
+  --color-primary-700: #7d451f;
+  --color-primary-800: #663916;
+  --color-primary-900: #4f2d0d;
+  --color-primary-950: #382008;
+
+  /* Colors - Earth Tones */
+  --color-earth-tan: #F0EDE5;
+  --color-earth-brown: #6B4C3A;
+  --color-earth-sage: #5C7A68;
+  --color-earth-moss: #3F6A5C;
+
+  /* Colors - Accent */
+  --color-accent-sage: #5C7A68;
+  --color-accent-ochre: #C196AB;
+
+  /* Colors - Neutral */
+  --color-neutral-50: #FFFFFF;
+  --color-neutral-100: #FDFCFB;
+  --color-neutral-200: #FAF7F3;
+  --color-neutral-300: #F5EDE5;
+  --color-neutral-400: #F0EDE5;
+  --color-neutral-500: #E0BFA8;
+  --color-neutral-600: #D9D2C7;
+  --color-neutral-700: #5C7A68;
+  --color-neutral-800: #2E4A3F;
+  --color-neutral-900: #3A5F70;
+  --color-neutral-950: #1F3E52;
+
+  /* Colors - Semantic */
+  --color-success: #2D6A4F;
+  --color-warning: #D4A574;
+  --color-error: #A64253;
+  --color-info: #3A5F70;
+
+  /* Font Families */
+  --font-primary: var(--font-primary);
+  --font-accent: var(--font-accent);
+  --font-alternate-1: var(--font-alternate-1);
+  --font-alternate-2: var(--font-alternate-2);
+  --font-mono: 'Geist Mono', monospace;
+
+  /* Font Weights */
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Font Sizes */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 32px;
+  --font-size-4xl: 40px;
+  --font-size-5xl: 48px;
+  --font-size-6xl: 56px;
+
+  /* Spacing (4px base unit) */
+  --spacing-0: 0;
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+
+  /* Border Radius */
+  --border-radius-none: 0;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 16px;
+  --border-radius-full: 9999px;
+
+  /* Box Shadows (warm rust-tinted) */
+  --shadow-sm: 0 1px 2px 0 #6B4C3A05;
+  --shadow-md: 0 4px 6px -1px #6B4C3A1A;
+  --shadow-lg: 0 10px 15px -3px #6B4C3A1A;
+  --shadow-xl: 0 20px 25px -5px #6B4C3A1A;
+
+  /* Opacity */
+  --opacity-0: 0;
+  --opacity-5: 0.05;
+  --opacity-10: 0.1;
+  --opacity-20: 0.2;
+  --opacity-25: 0.25;
+  --opacity-30: 0.3;
+  --opacity-40: 0.4;
+  --opacity-50: 0.5;
+  --opacity-60: 0.6;
+  --opacity-70: 0.7;
+  --opacity-75: 0.75;
+  --opacity-80: 0.8;
+  --opacity-90: 0.9;
+  --opacity-95: 0.95;
+  --opacity-100: 1;
+
+  /* Max Width */
+  --max-width-container: 1280px;
 }
 
 @layer base {
   * {
-    border-color: var(--border);
+    border-color: var(--color-neutral-600);
   }
 
   body {
@@ -91,12 +182,12 @@
   input:focus-visible,
   select:focus-visible,
   textarea:focus-visible {
-    outline: 2px solid var(--primary);
+    outline: 2px solid var(--color-primary-500);
     outline-offset: 1px;
   }
 
   a:focus-visible {
-    outline: 2px solid var(--primary);
+    outline: 2px solid var(--color-primary-500);
     outline-offset: 1px;
     text-decoration: underline;
     text-decoration-offset: 0.5rem;
