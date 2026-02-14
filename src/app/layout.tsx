@@ -1,5 +1,4 @@
 import "@/styles/globals.css";
-import "@/styles/design-tokens.css";
 import { Montserrat, Nothing_You_Could_Do, Quicksand, Shadows_Into_Light_Two } from "next/font/google";
 import Header from "@/components/header";
 import { Footer } from "@/components/footer";
