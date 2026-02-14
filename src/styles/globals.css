@@ -35,7 +35,8 @@
   }
 
   body {
-    @apply bg-neutral-50 text-neutral-950 font-primary px-4 md:px-6 lg:px-10;
+    font-family: var(--font-primary);
+    @apply bg-neutral-50 text-neutral-950 px-4 md:px-6 lg:px-10;
   }
 
   h1 {
@@ -90,10 +91,14 @@
   input:focus-visible,
   select:focus-visible,
   textarea:focus-visible {
-    @apply outline-2 outline-offset-1 outline-primary-600;
+    outline: 2px solid var(--primary);
+    outline-offset: 1px;
   }
 
   a:focus-visible {
-    @apply outline-2 outline-offset-1 outline-primary-600 underline underline-offset-2;
+    outline: 2px solid var(--primary);
+    outline-offset: 1px;
+    text-decoration: underline;
+    text-decoration-offset: 0.5rem;
   }
 }

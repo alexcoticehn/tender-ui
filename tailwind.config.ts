@@ -11,13 +11,6 @@ const config: Config = {
       maxWidth: {
         container: '1280px',
       },
-      fontFamily: {
-        primary: "['Montserrat', 'sans-serif']",
-        accent: "['Nothing You Could Do', 'cursive']",
-        alternate1: "['Quicksand', 'sans-serif']",
-        alternate2: "['Shadows Into Light Two', 'cursive']",
-        mono: "['Geist Mono', 'monospace']",
-      },
       fontWeight: {
         extralight: '200',
         light: '300',
