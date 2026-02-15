@@ -127,7 +127,11 @@
 
   body {
     font-family: var(--font-primary);
-    @apply bg-neutral-50 text-neutral-950 px-4 md:px-6 lg:px-10;
+    @apply bg-neutral-50 text-neutral-950;
+  }
+
+  main {
+    @apply max-w-container mx-auto;
   }
 
   h1 {
