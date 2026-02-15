@@ -2,24 +2,25 @@
 @import "tw-animate-css";
 
 @theme {
-  /* Colors - Primary (Terracotta) */
-  --color-primary-50: #F5EDE5;
-  --color-primary-100: #EDD9CC;
-  --color-primary-200: #E0BFA8;
-  --color-primary-300: #D4A584;
-  --color-primary-400: #C78B5F;
-  --color-primary-500: #A55D35;
-  --color-primary-600: #945228;
-  --color-primary-700: #7d451f;
-  --color-primary-800: #663916;
-  --color-primary-900: #4f2d0d;
-  --color-primary-950: #382008;
+  /* Colors - Primary (Deep Forest Green) */
+  --color-primary-50: #F0F4F3;
+  --color-primary-100: #E0EAE7;
+  --color-primary-200: #C1D5CF;
+  --color-primary-300: #A2C0B7;
+  --color-primary-400: #638B7F;
+  --color-primary-500: #2E4A3F;
+  --color-primary-600: #293F36;
+  --color-primary-700: #23342B;
+  --color-primary-800: #1D2A23;
+  --color-primary-900: #162218;
+  --color-primary-950: #0F1410;
 
   /* Colors - Earth Tones */
   --color-earth-tan: #F0EDE5;
   --color-earth-brown: #6B4C3A;
   --color-earth-sage: #5C7A68;
   --color-earth-moss: #3F6A5C;
+  --color-earth-terracotta: #A55D35;
 
   /* Colors - Accent */
   --color-accent-sage: #5C7A68;

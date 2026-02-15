@@ -3,19 +3,19 @@
  * Centralized color definitions for use in React components and utilities
  */
 
-// Primary Colors - Terracotta Scale
+// Primary Colors - Deep Forest Green Scale
 export const PRIMARY_COLORS = {
-  50: '#F5EDE5',
-  100: '#EDD9CC',
-  200: '#E0BFA8',
-  300: '#D4A584',
-  400: '#C78B5F',
-  500: '#A55D35', // Brand primary
-  600: '#945228',
-  700: '#7d451f',
-  800: '#663916',
-  900: '#4f2d0d',
-  950: '#382008',
+  50: '#F0F4F3',
+  100: '#E0EAE7',
+  200: '#C1D5CF',
+  300: '#A2C0B7',
+  400: '#638B7F',
+  500: '#2E4A3F', // Brand primary
+  600: '#293F36',
+  700: '#23342B',
+  800: '#1D2A23',
+  900: '#162218',
+  950: '#0F1410',
 } as const;
 
 // Earth Tone Palette
