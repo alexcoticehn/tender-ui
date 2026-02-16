@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import { Montserrat, Nothing_You_Could_Do, Quicksand, Shadows_Into_Light_Two } from "next/font/google";
+import Header from "@/components/header";
 
 // Primary font
 const montserrat = Montserrat({
@@ -44,6 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href="/images/favicon.ico" />
       </head>
       <body>
+        <Header />
         <main>
           {children}
         </main>

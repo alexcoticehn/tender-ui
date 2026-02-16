@@ -10,49 +10,77 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
 
-  return (
-    <header className="w-full fixed top-0 left-0 right-0 z-50 md:bg-gradient-to-b md:from-white md:via-white md:to-transparent">
-      <nav className="w-full px-4 sm:px-6 lg:px-8 py-6 flex justify-between pointer-events-auto">
-        <div className="flex items-center gap-5">
-          <Link href="/" className="z-20 relative">
-            <Image
-              src="/images/logo_transparent.png"
-              alt="Tender Counselling Logo"
-              width={50}
-              height={20}
-            />
-          </Link>
-          
-          <div className="hidden md:flex gap-10 font-serif text-lg">
-            <Link href="/" className={`hover:text-[#e2725b] ${pathname === '/' ? 'underline underline-offset-4' : ''}`}>Home</Link>
-            <Link href="/about" className={`hover:text-[#e2725b] ${pathname === '/about' ? 'underline underline-offset-4' : ''}`}>About</Link>
-            <Link href="/services" className={`hover:text-[#e2725b] ${pathname === '/services' ? 'underline underline-offset-4' : ''}`}>Services</Link>
-            <Link href="/emdr" className={`hover:text-[#e2725b] ${pathname === '/emdr' ? 'underline underline-offset-4' : ''}`}>EMDR</Link>
-            <Link href="/rates" className={`hover:text-[#e2725b] ${pathname === '/rates' ? 'underline underline-offset-4' : ''}`}>Rates</Link>
-            <Link href="/faqs" className={`hover:text-[#e2725b] ${pathname === '/faqs' ? 'underline underline-offset-4' : ''}`}>FAQs</Link>
-            <Link href="/contact" className={`hover:text-[#e2725b] ${pathname === '/contact' ? 'underline underline-offset-4' : ''}`}>Contact</Link>
-          </div>
-        </div>
+  const navLinks = [
+    { href: "/services", label: "Services" },
+    { href: "/about", label: "About" },
+    { href: "/emdr", label: "EMDR" },
+    { href: "/rates", label: "Rates" },
+    { href: "/faqs", label: "FAQs" },
+    { href: "/contact", label: "Contact" },
+  ];
 
+  const isActive = (href: string) => pathname === href;
+
+  return (
+    <header className="sticky top-0 z-50 bg-neutral-50 border-b border-neutral-600 shadow-sm">
+      <div className="max-w-container mx-auto px-4 md:px-6 lg:px-10 py-4 flex justify-between items-center">
+        {/* Logo and Brand */}
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src="/images/logo_transparent.png"
+            alt="Tender Counselling Logo"
+            width={40}
+            height={40}
+          />
+          <span className="text-xl text-primary-500 hidden sm:inline">Tender Counselling</span>
+        </Link>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex gap-8">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`transition-colors ${
+                isActive(link.href)
+                  ? "text-primary-500 font-semibold"
+                  : "text-neutral-950 hover:text-primary-500"
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        {/* Mobile Menu Button */}
         <button
           className="md:hidden z-20 cursor-pointer"
           onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label="Toggle menu"
         >
-          {mobileOpen ? <X size={28} className="cursor-pointer" /> : <Menu size={28} />}
+          {mobileOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
+        {/* Mobile Navigation */}
         {mobileOpen && (
-          <div className="absolute top-0 left-0 w-full h-screen bg-white flex flex-col items-center justify-center gap-8 text-2xl font-serif z-10">
-            <Link href="/" onClick={() => setMobileOpen(false)} className={`hover:text-[#e2725b] ${pathname === '/' ? 'underline underline-offset-4' : ''}`}>Home</Link>
-            <Link href="/about" onClick={() => setMobileOpen(false)} className={`hover:text-[#e2725b] ${pathname === '/about' ? 'underline underline-offset-4' : ''}`}>About</Link>
-            <Link href="/services" onClick={() => setMobileOpen(false)} className={`hover:text-[#e2725b] ${pathname === '/services' ? 'underline underline-offset-4' : ''}`}>Services</Link>
-            <Link href="/emdr" onClick={() => setMobileOpen(false)} className={`hover:text-[#e2725b] ${pathname === '/emdr' ? 'underline underline-offset-4' : ''}`}>EMDR</Link>
-            <Link href="/rates" onClick={() => setMobileOpen(false)} className={`hover:text-[#e2725b] ${pathname === '/rates' ? 'underline underline-offset-4' : ''}`}>Rates</Link>
-            <Link href="/faqs" onClick={() => setMobileOpen(false)} className={`hover:text-[#e2725b] ${pathname === '/faqs' ? 'underline underline-offset-4' : ''}`}>FAQs</Link>
-            <Link href="/contact" onClick={() => setMobileOpen(false)} className={`hover:text-[#e2725b] ${pathname === '/contact' ? 'underline underline-offset-4' : ''}`}>Contact</Link>
+          <div className="absolute top-full left-0 w-full bg-neutral-50 border-b border-neutral-600 flex flex-col gap-4 p-4 md:hidden">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setMobileOpen(false)}
+                className={`text-lg transition-colors ${
+                  isActive(link.href)
+                    ? "text-primary-500 font-semibold"
+                    : "text-neutral-950 hover:text-primary-500"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
         )}
-      </nav>
+      </div>
     </header>
   );
 }

@@ -24,6 +24,7 @@ export const EARTH_COLORS = {
   brown: '#6B4C3A', // Deep Rust Accent
   sage: '#5C7A68', // Sage Olive Green
   moss: '#3F6A5C', // Muted Teal Green
+  terracotta: '#A55D35', // Warm Terracotta
 } as const;
 
 // Accent Colors
