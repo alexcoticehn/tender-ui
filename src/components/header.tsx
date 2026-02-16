@@ -22,17 +22,16 @@ export default function Header() {
   const isActive = (href: string) => pathname === href;
 
   return (
-    <header className="sticky top-0 z-50 bg-neutral-50 border-b border-neutral-600 shadow-sm">
+    <header className="sticky top-0 z-50 bg-earth-tan border-b border-neutral-600 shadow-sm">
       <div className="max-w-container mx-auto px-4 md:px-6 lg:px-10 py-4 flex justify-between items-center">
         {/* Logo and Brand */}
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center">
           <Image
             src="/images/logo_transparent.png"
             alt="Tender Counselling Logo"
             width={40}
             height={40}
           />
-          <span className="text-xl text-primary-500 hidden sm:inline">Tender Counselling</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -41,10 +40,10 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className={`transition-colors ${
+              className={`transition-all ${
                 isActive(link.href)
-                  ? "text-primary-500 font-semibold"
-                  : "text-neutral-950 hover:text-primary-500"
+                  ? "text-earth-terracotta underline decoration-earth-terracotta underline-offset-4"
+                  : "text-neutral-950 hover:text-earth-terracotta hover:underline hover:decoration-earth-terracotta hover:underline-offset-4"
               }`}
             >
               {link.label}
@@ -63,16 +62,16 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {mobileOpen && (
-          <div className="absolute top-full left-0 w-full bg-neutral-50 border-b border-neutral-600 flex flex-col gap-4 p-4 md:hidden">
+          <div className="absolute top-full left-0 w-full bg-earth-tan border-b border-neutral-600 flex flex-col items-center gap-4 p-4 md:hidden">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className={`text-lg transition-colors ${
+                className={`text-lg transition-all ${
                   isActive(link.href)
-                    ? "text-primary-500 font-semibold"
-                    : "text-neutral-950 hover:text-primary-500"
+                    ? "text-earth-terracotta underline decoration-earth-terracotta underline-offset-4"
+                    : "text-neutral-950 hover:text-earth-terracotta hover:underline hover:decoration-earth-terracotta hover:underline-offset-4"
                 }`}
               >
                 {link.label}

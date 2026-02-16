@@ -128,7 +128,7 @@
 
   body {
     font-family: var(--font-primary);
-    @apply bg-neutral-50 text-neutral-950;
+    @apply bg-earth-tan text-neutral-950;
   }
 
   main {
@@ -136,11 +136,11 @@
   }
 
   h1 {
-    @apply text-5xl font-extralight leading-tight tracking-tighter;
+    @apply text-5xl font-extralight leading-tight tracking-wide;
   }
 
   h2 {
-    @apply text-4xl font-extralight leading-tight tracking-tighter;
+    @apply text-4xl font-extralight leading-tight tracking-wide;
   }
 
   h3 {
