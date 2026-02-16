@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
-import ButtonPrimary from "./buttons/button_primary";
+import Button from "./button";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -52,9 +52,9 @@ export default function Header() {
               </Link>
             ))}
           </nav>
-          <ButtonPrimary href="/contact" className="ml-4">
+          <Button href="/contact" className="ml-4">
             Book Now
-          </ButtonPrimary>
+          </Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -83,9 +83,9 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <ButtonPrimary href="/contact" onClick={() => setMobileOpen(false)} className="mt-4">
+            <Button href="/contact" onClick={() => setMobileOpen(false)} className="mt-4">
               Book Now
-            </ButtonPrimary>
+            </Button>
           </div>
         )}
       </div>
