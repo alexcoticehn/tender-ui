@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
+import ButtonPrimary from "./buttons/button_primary";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -35,21 +36,26 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`transition-all ${
-                isActive(link.href)
-                  ? "text-earth-terracotta underline decoration-earth-terracotta underline-offset-4"
-                  : "text-neutral-950 hover:text-earth-terracotta hover:underline hover:decoration-earth-terracotta hover:underline-offset-4"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+        <div className="hidden md:flex gap-8 items-center">
+          <nav className="flex gap-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`transition-all ${
+                  isActive(link.href)
+                    ? "text-earth-terracotta underline decoration-earth-terracotta underline-offset-4"
+                    : "text-neutral-950 hover:text-earth-terracotta hover:underline hover:decoration-earth-terracotta hover:underline-offset-4"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+          <ButtonPrimary href="/contact" className="ml-4">
+            Book Now
+          </ButtonPrimary>
+        </div>
 
         {/* Mobile Menu Button */}
         <button
@@ -77,6 +83,9 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <ButtonPrimary href="/contact" onClick={() => setMobileOpen(false)} className="mt-4">
+              Book Now
+            </ButtonPrimary>
           </div>
         )}
       </div>
