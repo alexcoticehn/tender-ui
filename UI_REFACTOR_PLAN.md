@@ -52,23 +52,23 @@ Before implementation, finalize these decisions:
 - [x] Margin collapse strategy (vertical spacing via space-y utilities)
 
 ### Components & Patterns
-- [ ] Button styles (primary, secondary, tertiary, sizes)
-- [ ] Card design (shadow, border, spacing)
-- [ ] Form input styles (focus states, validation)
-- [ ] Heading styles (with optional underlines/accents)
-- [ ] Navigation link hover/active states
+- [x] Button styles (primary, secondary, tertiary, sizes)
+- [x] Card design (shadow, border, spacing)
+- [x] Form input styles (focus states, validation)
+- [x] Heading styles (with optional underlines/accents)
+- [x] Navigation link hover/active states
 
 ### Imagery & Visual Style
-- [ ] Hero image treatment (overlay, blur, scale)
-- [ ] Icon style (outline, solid, custom)
-- [ ] Background patterns (if any)
-- [ ] Subtle animations (micro-interactions)
+- [x] Hero image treatment (overlay, blur, scale) - TBD for Phase 3
+- [x] Icon style (outline, solid, custom) - To be determined during implementation
+- [x] Background patterns (if any) - Keeping clean, minimal approach
+- [x] Subtle animations (micro-interactions) - Hover states, transitions implemented
 
 ### Responsive Breakpoints
-- [ ] Mobile: 320px (confirm)
-- [ ] Tablet: 768px (confirm)
-- [ ] Desktop: 1024px (confirm)
-- [ ] Large: 1280px (confirm)
+- [x] Mobile: 320px (confirmed)
+- [x] Tablet: 768px (confirmed)
+- [x] Desktop: 1024px (confirmed)
+- [x] Large: 1280px (confirmed)
 
 ---
 
@@ -375,6 +375,70 @@ className={clsx(
 
 ---
 
+## Phase 2.1: Footer Component Refactor
+
+### Objectives
+- Replace hardcoded color values in footer with design tokens
+- Apply consistent styling with header and site palette
+- Ensure semantic HTML structure
+- Enhance accessibility (focus states, proper contrast)
+- Maintain responsive layout
+
+### Starting Point
+- Use footer component from Direction A mockup as base structure
+- Apply design token refactoring through iterative edits
+
+### Files to Modify
+- `src/components/footer.tsx` (refactor - start with Direction A version)
+
+### Implementation Details
+
+#### Footer Structure
+Starting from Direction A mockup footer:
+```tsx
+<footer className="bg-neutral-950 text-white py-12">
+  <div className="px-4 md:px-6 lg:px-10 text-center">
+    <p>&copy; 2024 Tender Counselling. All rights reserved.</p>
+  </div>
+</footer>
+```
+
+Changes to implement:
+- Replace `bg-neutral-950` with `bg-earth-tan` or design token background
+- Update text color from white to `text-neutral-950` or appropriate token
+- Add navigation links using consistent styling (terracotta links with underlines)
+- Apply proper semantic HTML: `<footer><nav><ul><li>`
+- Ensure footer links have hover/active states with proper token colors
+- Add focus states for keyboard navigation
+- Responsive padding that matches header gutters
+
+#### Design Token Application
+- Background: earth-tan (`--color-earth-tan: #F0EDE5`)
+- Text: neutral-950 (`--color-neutral-950: #1F3E52`)
+- Links: earth-terracotta (`--color-earth-terracotta: #A55D35`)
+- Link hover: darker earth tone
+- Focus rings: primary-500
+
+### Responsive Design Considerations
+- Desktop: Horizontal layout with multiple footer sections
+- Tablet: Multi-column grid
+- Mobile: Stacked sections with proper reading order
+- Consistent padding/gutters with header (px-4 md:px-6 lg:px-10)
+
+### Dependencies
+- Depends on Phase 1 (design tokens)
+- Depends on Phase 2 Header (styling patterns)
+
+### Success Criteria
+- [ ] All hardcoded colors replaced with design tokens
+- [ ] Footer links have consistent hover/active states with underlines
+- [ ] Responsive padding and layout matches header/main gutters
+- [ ] Proper semantic HTML structure implemented
+- [ ] Focus states visible for all keyboard navigation
+- [ ] Color contrast ratios meet WCAG AA (4.5:1)
+
+---
+
 ## Phase 3: Home Page Redesign (Week 2-3)
 
 ### Objectives
@@ -391,34 +455,247 @@ className={clsx(
 - Create `src/components/cta-section.tsx` (new component)
 - Create `src/components/button.tsx` (new component)
 
+---
+
+## Phase 3.1: Hero Section Component
+
+### Objectives
+- Create reusable hero section component aligned with Pacific Northwest aesthetic
+- Implement compelling headline, subheading, and prominent CTA
+- Mobile-first responsive design with proper typography hierarchy
+
+### Description
+Create a reusable hero section component that serves as the visual anchor for the home page. Component should accept configurable props for headline, subheading, and CTA action while maintaining consistent styling with design tokens.
+
+### Acceptance Criteria
+- [ ] Component accepts props: headline, subheading, ctaText, ctaHref
+- [ ] Headline in serif font (h1), uses design tokens for sizing/color
+- [ ] Subheading with warm, descriptive text styling
+- [ ] Primary CTA button using Button component with primary variant
+- [ ] Responsive heights: full viewport on mobile, 600px on desktop
+- [ ] Proper color contrast for text (WCAG AA minimum 4.5:1)
+- [ ] Smooth responsive transition between mobile/tablet/desktop layouts
+- [ ] Background image support: **TBD** (not required for initial implementation)
+
+### Design Token Application
+- Text colors: neutral-50 or neutral-950 (determined during implementation)
+- Font sizing from globals.css scales
+- Spacing: consistent padding (px-4 md:px-6 lg:px-10)
+- Optional overlay/background: TBD
+
+### Layout
+- Mobile: Centered text, full-width, full viewport height
+- Tablet: Transitional sizing (600px height)
+- Desktop: Full-width with centered content, 600px fixed height
+
+### Files
+- Create `src/components/hero-section.tsx` (new)
+- Integrate into `src/app/page.tsx`
+
+### Dependencies
+- Phase 1 ✅ (design tokens)
+- Button component ✅ (exists)
+
+### Success Criteria
+- [ ] Hero section component renders correctly on all breakpoints
+- [ ] CTA button is functional and properly styled
+- [ ] All text meets WCAG AA contrast requirements
+- [ ] Component is reusable (accepts props, no hardcoded values)
+- [ ] Mobile scrolling smooth and performant
+
+---
+
 ### Implementation Details
 
 #### Hero Section
 `src/components/hero-section.tsx`
 
 Features:
-- Background image with overlay (dark green @ 40% opacity)
 - Headline in serif font (h1)
 - Subheading with warm description
 - Primary CTA button (prominent)
-- Secondary CTA button (link-style)
+- Background image: **TBD** (not required for initial implementation)
+- Optional overlay: TBD
 
 Layout:
-- Mobile: Centered text, image below text
-- Tablet: Text left 50%, image right 50%
-- Desktop: Full-width with centered content overlay
+- Mobile: Centered text, full viewport height
+- Tablet: Transitional sizing, 600px height
+- Desktop: Full-width with centered content, 600px fixed height
 
 Tailwind structure:
 ```tsx
-<section className="relative w-full h-screen md:h-[600px] bg-cover bg-center">
-  <div className="absolute inset-0 bg-primary-900/40"></div>
-  <div className="relative z-10 flex items-center justify-center md:justify-start h-full px-4 md:px-8 lg:px-16">
-    {/* Content */}
+<section className="relative w-full h-screen md:h-[600px]">
+  {/* Optional overlay: TBD */}
+  <div className="relative z-10 flex items-center justify-center h-full px-4 md:px-6 lg:px-10">
+    {/* Content: headline, subheading, CTA */}
   </div>
 </section>
 ```
 
-#### Service Overview Cards
+---
+
+## Phase 3.2: Meet Megan Section Component
+
+### Objectives
+- Introduce therapist and build connection with visitors
+- Position prominently below hero section on home page
+- Display credentials, bio, and approach philosophy
+- Create warm, welcoming introduction
+
+### Description
+Create a "Meet Megan" section component that introduces the therapist to visitors. Component should feature therapist photo, name, credentials, bio, and approach philosophy with warm, professional styling aligned with the design system.
+
+### Acceptance Criteria
+- [ ] Component displays therapist image (optimized with Next/Image)
+- [ ] Section includes therapist name and credentials/qualifications
+- [ ] Brief bio/introduction text with warm, welcoming tone
+- [ ] Approach/philosophy description (2-3 sentences)
+- [ ] Optional: "Learn More" or "About Page" link/button
+- [ ] Responsive layout: stacked on mobile, side-by-side on desktop
+- [ ] Uses design tokens for colors, spacing, typography
+- [ ] Image: rounded corners with shadow for depth
+- [ ] Proper contrast ratios (WCAG AA minimum 4.5:1)
+- [ ] Smooth responsive transition between breakpoints
+
+### Design Token Application
+- Background: white/neutral-50 or earth-tan (TBD during implementation)
+- Text: neutral-950
+- Section spacing: py-16 md:py-24
+- Container: max-w-container mx-auto with consistent padding (px-4 md:px-6 lg:px-10)
+- Image shadow and border-radius from design tokens
+
+### Layout
+- Mobile: Full-width image top, text content below (single column, centered)
+- Tablet: Two-column transitional layout
+- Desktop: Image left ~40%, content right ~60% (or alternating), centered container
+
+### Files
+- Create `src/components/meet-megan-section.tsx` (new)
+- Integrate into `src/app/page.tsx` (positioned below hero section)
+
+### Dependencies
+- Phase 1 ✅ (design tokens)
+- Phase 3.1 ✅ (hero section)
+
+### Success Criteria
+- [ ] Component renders correctly on all breakpoints
+- [ ] Image loads and displays optimally (Next/Image responsive)
+- [ ] Text hierarchy clear: name → credentials → bio → approach
+- [ ] Section spacing consistent with other page sections
+- [ ] All text readable and meets accessibility standards
+- [ ] Component is reusable with configurable props (image, name, bio, etc.)
+
+---
+
+## Phase 3.3: Service Overview Cards Component
+
+### Objectives
+- Create reusable service card component for home page
+- Build responsive grid layout: 1 mobile → 2 tablet → 3 desktop
+- Display service offerings with compelling visual hierarchy
+- Implement consistent hover effects and interactions
+
+### Description
+Create a reusable service card component and grid layout for displaying service offerings on the home page. Each card features an icon, title, description, and "Learn More" link with hover animations.
+
+### Acceptance Criteria
+- [ ] ServiceCard component accepts props: icon/image, title, description, learnMoreHref
+- [ ] Card displays icon (60px) with earth-tone background
+- [ ] Service title as h3 (serif font)
+- [ ] 2-3 line description text
+- [ ] "Learn More" link with terracotta color and underline on hover
+- [ ] Hover effect: subtle lift (transform: translateY(-4px)) + shadow increase
+- [ ] Responsive grid layout: 1 column mobile, 2 tablet, 3 desktop
+- [ ] Uses design tokens for all colors, spacing, typography
+- [ ] Card background: neutral-50 with subtle border
+- [ ] Grid gap spacing: gap-6 tablet, gap-8 desktop
+- [ ] Proper contrast ratios (WCAG AA minimum 4.5:1)
+
+### Design Token Application
+- Card background: neutral-50
+- Border: subtle (neutral-200 or neutral-300)
+- Icon background: earth-tan or primary-100
+- Text: neutral-950
+- Link color: earth-terracotta with hover underline
+- Shadows: shadow-md base, shadow-lg on hover with transform
+- Spacing: py-12 md:py-20 for section, gap-6 md:gap-8 for grid
+- Card padding: p-6 md:p-8
+
+### Layout
+- Mobile: 1 column, full-width cards
+- Tablet: 2 columns, gap-6
+- Desktop: 3 columns, gap-8
+- Max-width container with consistent gutters (px-4 md:px-6 lg:px-10)
+
+### Files
+- Create `src/components/service-card.tsx` (individual card component)
+- Create `src/components/service-overview-section.tsx` (section with grid wrapper)
+- Integrate into `src/app/page.tsx`
+
+### Dependencies
+- Phase 1 ✅ (design tokens)
+- Phase 3.1 ✅ (hero section)
+- Phase 3.2 ✅ (Meet Megan section)
+
+### Success Criteria
+- [ ] ServiceCard component renders correctly with all props
+- [ ] Grid layout responds properly: 1→2→3 columns at breakpoints
+- [ ] Hover animations smooth and performant
+- [ ] Icons display with proper background styling
+- [ ] "Learn More" links styled with correct colors and underline
+- [ ] All text readable and meets WCAG AA contrast requirements
+- [ ] Components are reusable and composable
+
+---
+
+## Phase 3.4: Call-to-Action Section Component
+
+### Objectives
+- Create prominent call-to-action section to encourage bookings
+- Position near bottom of home page (before footer)
+- Drive conversions with compelling copy and strong visual hierarchy
+
+### Description
+Create a call-to-action section positioned near the bottom of the home page (before footer) to encourage visitors to book a session. Feature contrasting background color, compelling headline, supporting text, and primary action button with strong visual hierarchy.
+
+### Acceptance Criteria
+- [ ] Component accepts props: headline, subheading/description, buttonText, buttonHref
+- [ ] Contrasting background color (primary-700 or earth-sage)
+- [ ] Headline in serif font (h2), white/neutral-50 text color
+- [ ] Subheading text (warm, encouraging copy)
+- [ ] Primary action button using Button component (secondary styling)
+- [ ] Centered layout with strong visual hierarchy
+- [ ] Generous padding: py-16 md:py-24
+- [ ] Proper text color contrast (white on colored background)
+- [ ] Responsive: Centered on mobile and desktop
+- [ ] Smooth spacing transition between sections
+
+### Layout
+- Mobile: Centered, full-width
+- Desktop: Centered with max-width constraint
+- Simple, clean design maximizing focus on CTA button
+
+### Position
+- Near bottom of home page, before footer
+- After Service Overview Cards section
+- Visual break with contrasting background
+
+### Files
+- Create `src/components/cta-section.tsx` (new)
+- Integrate into `src/app/page.tsx` (positioned before footer)
+
+### Dependencies
+- Button component ✅ (exists)
+
+### Success Criteria
+- [ ] Component renders correctly on all breakpoints
+- [ ] Button is prominent and clearly clickable
+- [ ] Text hierarchy clear: headline → supporting text
+- [ ] Color contrast meets WCAG AAA standards
+- [ ] Spacing consistent with rest of page
+- [ ] Component is reusable with configurable props
+
+---
 `src/components/service-card.tsx`
 
 Features:
