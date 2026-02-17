@@ -28,10 +28,10 @@ export default function Header() {
         {/* Logo and Brand */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/images/logo_transparent.png"
+            src="/images/logo_full_transparent.png"
             alt="Tender Counselling Logo"
-            width={40}
-            height={40}
+            width={250}
+            height={250}
           />
         </Link>
 
