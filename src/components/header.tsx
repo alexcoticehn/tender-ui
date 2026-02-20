@@ -24,15 +24,15 @@ export default function Header() {
 
   return (
     <header className="bg-earth-tan shadow-sm relative">
-      <div className="max-w-container mx-auto px-4 md:px-6 lg:px-10 py-4 flex justify-between items-center">
+      <div className="max-w-container mx-auto px-4 md:px-6 lg:px-10 flex justify-between items-center">
         {/* Logo and Brand */}
         <Link href="/" className="flex items-center">
-          <div className="w-[100px] h-[100px] md:w-[250px] md:h-[250px] relative">
+          <div className="w-[100px] h-[100px] md:w-[150px] md:h-[150px] relative">
             <Image
               src="/images/logo_full_transparent.png"
               alt="Tender Counselling Logo"
               fill
-              sizes="(max-width: 768px) 100px, 250px"
+              sizes="(max-width: 768px) 100px, 150px"
               className="object-contain"
             />
           </div>
