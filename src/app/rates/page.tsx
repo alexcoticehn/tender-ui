@@ -1,7 +1,7 @@
 export default function Rates() {
   return (
     <div className="min-h-screen text-black font-serif">
-        <section className="mx-8 pt-24">
+        <section className="mx-8 pt-10">
           <h2 className="text-4xl mb-4">Rates</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-6">
             <div className="flex flex-col">
