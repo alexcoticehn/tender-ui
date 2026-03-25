@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import CallToAction from "@/components/call-to-action";
 
 export default function Home() {
   return (
@@ -44,6 +45,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <CallToAction />
 
     </div>
   );
