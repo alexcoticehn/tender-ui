@@ -7,7 +7,15 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        primary: 'var(--font-primary)',
+        accent: 'var(--font-accent)',
+        alternate1: 'var(--font-alternate-1)',
+        alternate2: 'var(--font-alternate-2)',
+        mono: 'var(--font-mono)',
+      },
+    },
   },
   plugins: [],
 };
