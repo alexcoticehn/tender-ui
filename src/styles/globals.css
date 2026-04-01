@@ -164,7 +164,11 @@
   }
 
   small {
-    @apply text-sm font-normal leading-normal tracking-wide;
+    @apply text-sm font-normal leading-relaxed;
+  }
+
+  .xsmall {
+    @apply text-xs font-normal leading-relaxed;
   }
 
   /* Interactive elements: transitions */
