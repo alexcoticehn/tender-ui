@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
+import ServiceCard from "./service-card";
 
 interface ServiceCard {
   title: string;
@@ -48,21 +47,15 @@ export default function ServicesSection({ services = defaultServices }: Services
         <h2 className="text-5xl md:text-6xl mb-12 text-center">Services</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {services.map((service) => (
-            <div key={service.title} className="flex flex-col items-center justify-center">
-              <Link 
-                href={service.href} 
-                className="text-lg md:text-xl mb-5 hover:text-[#eae4dc] underline-offset-2 hover:underline transition-colors duration-200"
-              >
-                {service.title}
-              </Link>
-              <Image 
-                src={service.image} 
-                alt={service.alt} 
-                width={service.width} 
-                height={service.height}
-                className="w-full object-cover rounded-md"
-              />
-            </div>
+            <ServiceCard
+              key={service.title}
+              title={service.title}
+              href={service.href}
+              image={service.image}
+              alt={service.alt}
+              width={service.width}
+              height={service.height}
+            />
           ))}
         </div>
       </div>
