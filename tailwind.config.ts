@@ -15,6 +15,12 @@ const config: Config = {
         alternate2: 'var(--font-alternate-2)',
         mono: 'var(--font-mono)',
       },
+      boxShadow: {
+        sm: 'var(--shadow-sm)',
+        md: 'var(--shadow-md)',
+        lg: 'var(--shadow-lg)',
+        xl: 'var(--shadow-xl)',
+      },
     },
   },
   plugins: [],

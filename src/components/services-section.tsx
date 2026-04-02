@@ -42,7 +42,7 @@ const defaultServices: ServiceCard[] = [
 
 export default function ServicesSection({ services = defaultServices }: ServicesProps) {
   return (
-    <section className="w-full bg-[#495a58] text-white">
+    <section className="w-full">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-10 py-16 md:py-24">
         <h2 className="text-5xl md:text-6xl mb-12 text-center">Services</h2>
         <div className="grid md:grid-cols-3 gap-6">

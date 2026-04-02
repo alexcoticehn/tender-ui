@@ -19,20 +19,32 @@ export default function ServiceCard({
   height,
 }: ServiceCardProps) {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <Link 
-        href={href} 
-        className="text-lg md:text-xl mb-5 hover:text-[#eae4dc] underline-offset-2 hover:underline transition-colors duration-200"
-      >
-        {title}
-      </Link>
-      <Image 
-        src={image} 
-        alt={alt} 
-        width={width} 
-        height={height}
-        className="w-full object-cover rounded-md"
-      />
-    </div>
+    <Link href={href}>
+      <div className="flex flex-col overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer bg-white h-full">
+        {/* Top section with title */}
+        <div className="pt-6 px-4 pb-4">
+          <h3 className="text-lg font-medium text-center text-neutral-950">
+            {title}
+          </h3>
+        </div>
+
+        {/* Image section */}
+        <div className="relative w-full h-40">
+          <Image 
+            src={image} 
+            alt={alt} 
+            width={width} 
+            height={height}
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Bottom section with Learn More */}
+        <div className="pt-4 px-4 pb-6 flex items-center justify-center gap-2">
+          <span className="text-neutral-950 font-medium">Learn More</span>
+          <span className="text-xl">»</span>
+        </div>
+      </div>
+    </Link>
   );
 }
