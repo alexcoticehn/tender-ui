@@ -20,7 +20,7 @@ export default function ServiceCard({
 }: ServiceCardProps) {
   return (
     <Link href={href}>
-      <div className="flex flex-col overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer bg-earth-moss h-full">
+      <div className="flex flex-col overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer bg-accent-sage h-full">
         {/* Top section with title */}
         <div className="pt-6 px-4 pb-4">
           <h3 className="text-lg font-medium text-center text-white">
