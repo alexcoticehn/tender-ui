@@ -20,10 +20,10 @@ export default function ServiceCard({
 }: ServiceCardProps) {
   return (
     <Link href={href}>
-      <div className="flex flex-col overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer bg-white h-full">
+      <div className="flex flex-col overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer bg-earth-moss h-full">
         {/* Top section with title */}
         <div className="pt-6 px-4 pb-4">
-          <h3 className="text-lg font-medium text-center text-neutral-950">
+          <h3 className="text-lg font-medium text-center text-white">
             {title}
           </h3>
         </div>
@@ -41,8 +41,8 @@ export default function ServiceCard({
 
         {/* Bottom section with Learn More */}
         <div className="pt-4 px-4 pb-6 flex items-center justify-center gap-2">
-          <span className="text-neutral-950 font-medium">Learn More</span>
-          <span className="text-xl">»</span>
+          <span className="text-white font-medium">Learn More</span>
+          <span className="text-xl text-white">»</span>
         </div>
       </div>
     </Link>
