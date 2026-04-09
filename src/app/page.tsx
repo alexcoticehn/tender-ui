@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="min-h-screen text-gray-900">
         <HeroSection 
-          headline="Megan Yerxa - Tender Counselling"
+          headline="Megan Yerxa - EMDR Integrative Therapy"
           subheading="Steady support across shifting waters"
         />
 

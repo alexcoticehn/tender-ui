@@ -31,7 +31,7 @@ const shadowsIntoLightTwo = Shadows_Into_Light_Two({
 });
 
 export const metadata = {
-  title: "Tender Counselling",
+  title: "EMDR Integrative Therapy",
   description: "Steady support across shifting waters. Megan Yerxa offers trauma-informed counselling, EMDR therapy, and relationship support in Vancouver and across BC.",
   keywords: ["EMDR", "Eye Movement Desensitization and Reprocessing", "Therapy", "Counselling", "Vancouver", "Online Counselling", "Trauma Counselling", "EMDR Counselling Vancouver"],
 };

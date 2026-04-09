@@ -7,7 +7,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
           {/* Left: Business Blurb */}
           <div className="md:col-span-2">
-              <h4 className="mb-2 font-alternate-1">Tender Counselling</h4>
+              <h4 className="mb-2 font-alternate-1">EMDR Integrative Therapy</h4>
             <small className="max-w-md">
               Online counselling services available across British Columbia and most of Canada.
             </small>
@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
           {/* Bottom: Copyright & Land Acknowledgement */}
           <div className="mt-10 border-t border-neutral-400 pt-6 text-neutral-400">
-          <p className="xsmall">&copy; 2026 Tender Counselling. All rights reserved.</p>
+          <p className="xsmall">&copy; 2026 EMDR Integrative Therapy. All rights reserved.</p>
           <p className="mt-2 xsmall">
             I respectfully acknowledge that I occupy the unceded, ancestral territories of the xʷməθkwəy̓əm (Musqueam), Skwxwú7mesh (Squamish), S’ólh Téméxw (Stó:lō), Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh), Qayqayt, and kʷikʷəƛ̓əm (Kwikwetlem) peoples.
           </p>
