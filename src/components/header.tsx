@@ -27,12 +27,12 @@ export default function Header() {
       <div className="max-w-container mx-auto px-4 md:px-6 lg:px-10 flex justify-between items-center">
         {/* Logo and Brand */}
         <Link href="/" className="flex items-center">
-          <div className="w-[130px] h-[130px] md:w-[180px] md:h-[180px] relative">
+          <div className="w-[100px] h-[100px] md:w-[130px] md:h-[130px] relative">
             <Image
               src="/images/emdr_transparent.png"
               alt="EMDR Integrative Therapy Logo"
               fill
-              sizes="(max-width: 768px) 130px, 180px"
+              sizes="(max-width: 768px) 100px, 130px"
               className="object-contain"
             />
           </div>
